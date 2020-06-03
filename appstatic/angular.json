@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "appstatic"
+    }
+  },
+  "defaultProject": "appstatic",
+  "cli": {
+    "analytics": "5056eaad-ffc3-4670-855f-efccc3bbf304"
+  }
 }
