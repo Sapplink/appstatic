@@ -1,1 +1,30 @@
-<p>landing-page works!</p>
+<div class="row">
+    <div class="col-md-12 thin-nav">
+        <img src='../../../assets/images/logo-white.png'>
+    </div>
+
+    <div class="col-md-12 contents">
+        <div class="col-md-6 projects">
+            <button type="button"
+            id="landingPage-projectsButton" 
+            title=""
+            routerLink="/first-component"
+            routerLinkActive="active">
+                {{ 'landingPage.contents.projectsButton' | translate }}
+            </button>
+        </div>
+        <div class="col-md-6 designs">
+            <button type="button"
+            id="landingPage-designsButton" 
+            title=""
+            routerLink="/first-component"
+            routerLinkActive="active">
+                {{ 'landingPage.contents.designsButton' | translate }}
+            </button>
+        </div>
+    </div>
+
+    <div class="col-md-12 nav">
+
+    </div>
+</div>

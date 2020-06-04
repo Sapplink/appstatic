@@ -4,3 +4,26 @@ $white: #efefef;
 $black: #161616;
 $primary-green: #8bd126;
 $secondary-green: #acf230;
+
+// Global Button
+button {
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+    border-collapse: separate;
+    border-radius: 3px !important;
+    width: 45%;
+    text-align: center !important;
+    padding: 5px;
+    margin: 15px auto 15px auto !important;
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+}
+
+// Global small text
+.small-text {
+    font-family: Playfair Display;
+}
