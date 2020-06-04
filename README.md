@@ -7,5 +7,7 @@ The freelance website for Sapplink. Portfolio and showcase of past products and 
 Created with NodeJS:
 
 UI - Typescript (Angular 9), HTML, (S)CSS
+  
 RL - ExpressJS
+  
 DB - MongoDB
