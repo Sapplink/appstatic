@@ -1,9 +1,12 @@
 {
     "landingPage": {
         "contents": {
+            "founder": "Marc Atasoy",
             "sapplinkSolutions": "Sapplink Solutions",
             "projectsButton": "Projects",
             "designsButton": "Designs",
+            "projectsDescriptionPartOne": "Design. Develop. Innovate. Founded by",
+            "projectsDescriptionPartTwo": " in 2017, the purpose of Sapplink is to create applications developed fully in-house. Focused on and excelling in graphical & UX/UI design, system architecture planning, data flow organization, and app & web development, Sapplink Solutions is both a stand-alone freelancer creating its own products, and a contractor/consultancy available for hire.",
             "clientelle": "Clients"
         }
     }

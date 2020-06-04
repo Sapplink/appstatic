@@ -14,22 +14,37 @@
         background-color: $black;
     }
 
+    .title {
+        font-family: Merriweather;
+        font-weight: 300;
+        font-size: 36pt;
+        margin-top: 45%;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+    }
+
     .contents {
+
+        .description {
+            margin: auto;
+        }
 
         .projects, .designs {
             margin: auto;
             display: inline-block;
+            clip-path: inset(0% 0% 0% 0%);
+            width: calc(100% - 2em);
 
             button {
                 width: 10em;
+                font-family: Playfair Display;
             }
         }
-
     }
 
     .nav {
         height: 10em;
-        margin-top: 39.4%;
+        margin-top: 23.4%;
         background-color: white;
     }
 

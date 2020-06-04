@@ -2,9 +2,23 @@
     <div class="col-md-12 thin-nav">
         <img src='../../../assets/images/logo-white.png'>
     </div>
-
+    <br>
+    <div class="col-md-12">
+        <span class="title">{{ 'landingPage.contents.sapplinkSolutions' | translate }}</span>
+    </div>
+    <br>
     <div class="col-md-12 contents">
-        <div class="col-md-6 projects">
+        <div class="col-md-6 description">
+            <span class="col-md-12 small-text">
+                {{ 'landingPage.contents.projectsDescriptionPartOne' | translate }}
+                <a routerLink="/first-component" routerLinkActive="active" class="small-text">
+                    {{ 'landingPage.contents.founder' | translate }}
+                </a>
+                {{ 'landingPage.contents.projectsDescriptionPartTwo' | translate }}
+            </span>
+        </div>
+        <br>
+        <div class="col-md-2 projects">
             <button type="button"
             id="landingPage-projectsButton" 
             title=""
@@ -13,7 +27,7 @@
                 {{ 'landingPage.contents.projectsButton' | translate }}
             </button>
         </div>
-        <div class="col-md-6 designs">
+        <div class="col-md-2 designs">
             <button type="button"
             id="landingPage-designsButton" 
             title=""
@@ -25,6 +39,6 @@
     </div>
 
     <div class="col-md-12 nav">
-
+        test
     </div>
 </div>
