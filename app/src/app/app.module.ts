@@ -5,6 +5,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LandingPageComponent } from './landing-page/landing-page/landing-page.component';
 
+import {TranslateModule, TranslateLoader} from '@ngx-translate/core';
+import {HttpClient, HttpClientModule} from '@angular/common/http';
+import {TranslateHttpLoader} from '@ngx-translate/http-loader';
+import { Http } from '@angular/http';
+
+export function HttpLoaderFactory(http: HttpClient) {
+  return new TranslateHttpLoader(http);
+}
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -12,7 +21,15 @@ import { LandingPageComponent } from './landing-page/landing-page/landing-page.c
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,    
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory,
+        deps: [HttpClient]
+      }
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]

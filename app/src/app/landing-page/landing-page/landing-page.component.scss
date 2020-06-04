@@ -1,0 +1,49 @@
+@import '../../../styles.scss';
+.row {
+    text-align: center;
+    font-family: Merriweather;
+    font-size: 11pt;
+    width: 105%;
+    height: 100%;
+    display: inline-block;
+    background-color: $white;
+
+    .thin-nav {
+        height: auto;
+        margin: auto;
+        background-color: $black;
+    }
+
+    .contents {
+
+        .projects, .designs {
+            margin: auto;
+            display: inline-block;
+
+            button {
+                width: 10em;
+            }
+        }
+
+    }
+
+    .nav {
+        height: 10em;
+        margin-top: 39.4%;
+        background-color: white;
+    }
+
+    #prj {
+        text-align: right;
+    }
+
+    #des {
+        text-align: left;
+    }
+
+    img {
+        height: 2.5em;
+        display: inline-block;
+        padding: 0;
+    }
+}
