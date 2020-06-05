@@ -7,18 +7,41 @@
     height: 100%;
     display: inline-block;
     background-color: $white;
+    
+    .language-bar-open {
+        height: 4em;
+        margin: auto;
+        background-color: $secondary-green;
+        transition: height 0.5s ease-in-out;
+    }
+
+    .language-bar-closed {
+        height: 0.2em;
+        margin: auto;
+        background-color: $secondary-green;
+        transition: height 0.5s ease-in-out;
+    }
 
     .thin-nav {
         height: auto;
         margin: auto;
         background-color: $black;
+
+        i {
+            color: $secondary-green;
+            float: left;
+            margin-top: 5px;
+            font-size: 21pt;
+            cursor: pointer;
+            transition: 0.5s ease-in-out;
+        }
     }
 
     .title, .motto {
         font-family: Merriweather;
         font-weight: 300;
         font-size: 36pt;
-        margin-top: 45% !important;
+        margin-top: 100px !important;
         text-rendering: optimizeLegibility;
         -webkit-font-smoothing: antialiased;
     }
@@ -28,6 +51,7 @@
     }
 
     .contents {
+        margin-top: 100px;
 
         .description {
             margin: auto;
@@ -40,7 +64,6 @@
 
             .icon {
                 font-size: 11pt;
-                // margin: auto;
             }
 
             button {
@@ -50,10 +73,11 @@
         }
     }
 
-    .nav {
-        height: 10em;
-        margin-top: 13.4%;
+    .clients {
         background-color: white;
+        margin-top: 13%;
+        height: 14em;
+        border-top: 1px solid $black;
     }
 
     #prj {

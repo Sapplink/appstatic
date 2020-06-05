@@ -1,6 +1,10 @@
-<div class="row">
+<div class="row">    
+    <div  [ngClass]="(navigationAccordionOpen) ? 'col-md-12 language-bar-open' : 'col-md-12 language-bar-closed'">
+    </div>
     <div class="col-md-12 thin-nav">
         <img src='../../../assets/images/logo-white.png'>
+        <i class="material-icons icon" *ngIf="!navigationAccordionOpen" (click)="toggleNavigation()">menu</i>
+        <i class="material-icons icon" *ngIf="navigationAccordionOpen" (click)="toggleNavigation()">close</i>
     </div>
     <br>
     <div class="col-md-12">
@@ -42,7 +46,7 @@
         </div>
     </div>
 
-    <div class="col-md-12 nav">
-        test
+    <div class="col-md-12 clients">
+        <span>{{ 'landingPage.contents.clientelle' | translate }}</span>
     </div>
 </div>
