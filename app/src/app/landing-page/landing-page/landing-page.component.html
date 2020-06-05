@@ -3,8 +3,8 @@
     </div>
     <div class="col-md-12 thin-nav">
         <img src='../../../assets/images/logo-white.png'>
-        <i class="material-icons icon" *ngIf="!navigationAccordionOpen" (click)="toggleNavigation()">menu</i>
-        <i class="material-icons icon" *ngIf="navigationAccordionOpen" (click)="toggleNavigation()">close</i>
+        <i class="material-icons icon" *ngIf="!navigationAccordionOpen" (click)="toggleNavigation()" [title]="openMenu">menu</i>
+        <i class="material-icons icon" *ngIf="navigationAccordionOpen" (click)="toggleNavigation()" [title]="closeMenu">close</i>
     </div>
     <br>
     <div class="col-md-12">
@@ -17,7 +17,7 @@
         <div class="col-md-6 description">
             <span class="col-md-12 small-text">
                 {{ 'landingPage.contents.projectsDescriptionPartOne' | translate }}
-                <a routerLink="/about" routerLinkActive="active" class="small-text">
+                <a routerLink="/about" routerLinkActive="active" class="small-text" [title]="aboutFounder">
                     {{ 'landingPage.contents.founder' | translate }}
                 </a>
                 {{ 'landingPage.contents.projectsDescriptionPartTwo' | translate }}
@@ -47,12 +47,12 @@
     </div>
 
     <div class="col-md-12 clients small-text">
-        <span>{{ 'landingPage.contents.clientelle' | translate }}</span>
+        <span>{{ 'landingPage.clientelle.clients' | translate }}</span>
         <div class="client-images col-md-12">
-            <img src="../../../assets/images/UTEFA_LOGO.png">
+            <a href="https://www.utefa.com/"><img src="../../../assets/images/UTEFA_LOGO.png" [title]="utefaTitle"></a>
             &nbsp;
             &nbsp;
-            <img src="../../../assets/images/INTACT_LOGO.png">
+            <a href="https://www.intact.ca/en/personal-insurance.html"><img src="../../../assets/images/INTACT_LOGO.png" [title]="intactTitle"></a>
         </div>
     </div>
 </div>
