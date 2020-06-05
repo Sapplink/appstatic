@@ -7,13 +7,17 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrls: ['./landing-page.component.scss']
 })
 export class LandingPageComponent implements OnInit {
-  hamburger = document.querySelector(".hamburger");
+  navigationAccordionOpen = false;
 
   constructor(private translate:TranslateService){
     translate.setDefaultLang('en');
   }
 
   ngOnInit(): void {
+  }
+
+  toggleNavigation(): void {
+    this.navigationAccordionOpen = !this.navigationAccordionOpen;
   }
 
   get projectsButtonHover(): string {
