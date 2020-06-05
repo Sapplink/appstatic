@@ -2,12 +2,17 @@
     "landingPage": {
         "contents": {
             "founder": "Marc Atasoy",
+            "companyMotto": "Design. Develop. Innovate | Toronto, Istanbul",
             "sapplinkSolutions": "Sapplink Solutions",
-            "projectsButton": "Projects",
-            "designsButton": "Designs",
-            "projectsDescriptionPartOne": "Design. Develop. Innovate. Founded by",
-            "projectsDescriptionPartTwo": " in 2017, the purpose of Sapplink is to create applications developed fully in-house. Focused on and excelling in graphical & UX/UI design, system architecture planning, data flow organization, and app & web development, Sapplink Solutions is both a stand-alone freelancer creating its own products, and a contractor/consultancy available for hire.",
-            "clientelle": "Clients"
+            "projectsDescriptionPartOne": "Founded in Toronto in 2017 by",
+            "projectsDescriptionPartTwo": ", the purpose of Sapplink is to create applications developed fully in-house. Focused on and excelling in graphical/UX/UI design, system architecture planning, data flow organization, and app/web development, Sapplink is both a stand-alone freelancer creating its own products, and a contractor/consultancy available for hire.",
+            "clientelle": "Clients",
+            "buttons": {
+                "projectsButton": "Projects",
+                "designsButton": "Designs",
+                "projectsButtonHover": "Show me technicals!",
+                "designsButtonHover": "I'm feeling creative!"
+            }
         }
     }
 }

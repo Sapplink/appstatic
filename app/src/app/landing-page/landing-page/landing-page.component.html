@@ -5,6 +5,8 @@
     <br>
     <div class="col-md-12">
         <span class="title">{{ 'landingPage.contents.sapplinkSolutions' | translate }}</span>
+        <br>
+        <span class="motto">{{ 'landingPage.contents.companyMotto' | translate }}</span>
     </div>
     <br>
     <div class="col-md-12 contents">
@@ -21,24 +23,25 @@
         <div class="col-md-2 projects">
             <button type="button"
             id="landingPage-projectsButton" 
-            title=""
+            [title]="projectsButtonHover"
             routerLink="/first-component"
             routerLinkActive="active">
-                {{ 'landingPage.contents.projectsButton' | translate }}
+            <i class="material-icons icon">build_circle</i>
+                {{ 'landingPage.contents.buttons.projectsButton' | translate }}
             </button>
         </div>
         <div class="col-md-2 designs">
             <button type="button"
             id="landingPage-designsButton" 
-            title=""
+            [title]="designsButtonHover"
             routerLink="/first-component"
             routerLinkActive="active">
-                {{ 'landingPage.contents.designsButton' | translate }}
+            <i class="material-icons icon">eco</i>
+                {{ 'landingPage.contents.buttons.designsButton' | translate }}
             </button>
         </div>
     </div>
 
     <div class="col-md-12 nav">
-        test
     </div>
 </div>
