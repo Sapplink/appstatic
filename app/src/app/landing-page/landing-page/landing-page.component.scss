@@ -18,7 +18,7 @@
         font-family: Merriweather;
         font-weight: 300;
         font-size: 36pt;
-        margin-top: 45%;
+        margin-top: 45% !important;
         text-rendering: optimizeLegibility;
         -webkit-font-smoothing: antialiased;
     }
@@ -31,7 +31,7 @@
 
         .description {
             margin: auto;
-            margin-top: 50px;
+            margin-top: 60px;
         }
 
         .projects, .designs {
@@ -52,7 +52,7 @@
 
     .nav {
         height: 10em;
-        margin-top: 21.4%;
+        margin-top: 13.4%;
         background-color: white;
     }
 
