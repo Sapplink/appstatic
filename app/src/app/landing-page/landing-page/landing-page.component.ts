@@ -14,11 +14,6 @@ export class LandingPageComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    // On click
-    this.hamburger.addEventListener("click", function() {
-      this.hamburger.classList.toggle("is-active");
-      // add menu opening here
-    });
   }
 
   get projectsButtonHover(): string {
