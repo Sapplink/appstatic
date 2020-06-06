@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
+import { MatDialog } from '@angular/material/dialog';
+import { AboutPageComponent } from '../../about-page/about-page/about-page.component';
 
 @Component({
   selector: 'app-landing-page',
@@ -9,8 +11,7 @@ import { TranslateService } from '@ngx-translate/core';
 export class LandingPageComponent implements OnInit {
   navigationAccordionOpen = false;
 
-  constructor(private translate:TranslateService){
-    translate.setDefaultLang('en');
+  constructor(private translate:TranslateService, public dialog: MatDialog) {
   }
 
   ngOnInit(): void {
@@ -18,6 +19,14 @@ export class LandingPageComponent implements OnInit {
 
   toggleNavigation(): void {
     this.navigationAccordionOpen = !this.navigationAccordionOpen;
+  }
+
+  openFounder() {
+    this.dialog.open(AboutPageComponent, {
+      autoFocus: true,
+      height: '68vh',
+      width: '68vw'
+    }); 
   }
 
 

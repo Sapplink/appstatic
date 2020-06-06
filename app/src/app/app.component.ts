@@ -22,7 +22,7 @@ export class AppComponent implements OnInit {
 
   ngOnInit() {
     this.setApplicationLanguage()
-    this.navigateTo(this.url);
+    // this.navigateTo(this.url);
   }
 
   setApplicationLanguage(): void {
