@@ -17,9 +17,9 @@
         <div class="col-md-6 description">
             <span class="col-md-12 small-text">
                 {{ 'landingPage.contents.projectsDescriptionPartOne' | translate }}
-                <a routerLink="/about" routerLinkActive="active" class="small-text" [title]="aboutFounder">
+                <u><a (click)="openFounder()" [title]="aboutFounder">
                     {{ 'landingPage.contents.founder' | translate }}
-                </a>
+                </a></u>
                 {{ 'landingPage.contents.projectsDescriptionPartTwo' | translate }}
             </span>
         </div>
@@ -50,9 +50,9 @@
         <span>{{ 'landingPage.clientelle.clients' | translate }}</span>
         <div class="client-images col-md-12">
             <a href="https://www.utefa.com/"><img src="../../../assets/images/UTEFA_LOGO.png" [title]="utefaTitle"></a>
-            &nbsp;
-            &nbsp;
-            <a href="https://www.intact.ca/en/personal-insurance.html"><img src="../../../assets/images/INTACT_LOGO.png" [title]="intactTitle"></a>
+            <!-- &nbsp;
+            &nbsp; -->
+            <!-- <a href="https://www.intact.ca/en/personal-insurance.html"><img src="../../../assets/images/INTACT_LOGO.png" [title]="intactTitle"></a> -->
         </div>
     </div>
 </div>
