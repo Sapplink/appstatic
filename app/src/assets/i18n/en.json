@@ -5,7 +5,6 @@
     },
     "landingPage": {
         "contents": {
-            "founder": "Marc Atasoy",
             "founderHover": "About the owner",
             "companyMotto": "Design. Develop. Innovate | Toronto, Istanbul",
             "sapplinkSolutions": "Sapplink Solutions",
@@ -25,6 +24,10 @@
         }
     },
     "aboutPage": {
-        
+        "age": "22",
+        "about": "Born in Istanbul in 1998, Marc Atasoy is a Canadian 22 year oldsoftware developer studying in his fourth year at University of Toronto, acquiring his BASc. in Industrial Engineering."
+    },
+    "shared": {
+        "founder": "Marc Atasoy"
     }
 }

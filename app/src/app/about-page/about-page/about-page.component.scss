@@ -7,7 +7,7 @@
         text-align: center;
 
         .image-cropper {
-            margin: 10% auto;
+            margin: 2% auto;
             width: 150px;
             height: 150px;
             overflow: hidden;
@@ -19,6 +19,20 @@
             margin: 0 auto;
             height: 100%;
             width: auto;
+        }
+        .small-text, .small-text-2 {
+            font-family: Playfair Display;
+            font-size: 14pt !important;
+
+            #founderAge {
+                font-size: 11pt !important;
+                margin: auto !important;
+            }
+        }
+
+        .small-text-2 {
+            margin-top: 2.5%;
+            font-size: 12pt !important;
         }
     }
 }
