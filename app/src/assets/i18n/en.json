@@ -25,7 +25,8 @@
     },
     "aboutPage": {
         "age": "22",
-        "about": "Born in Istanbul in 1998, Marc Atasoy is a Canadian 22 year oldsoftware developer studying in his fourth year at University of Toronto, acquiring his BASc. in Industrial Engineering."
+        "about1": "Born in Istanbul in 1998, Marc Atasoy is a 22 year old Canadian innovator studying in his fourth year at University of Toronto, acquiring his BASc. in Industrial Engineering, specializing in Operations Research. He also holds an Engineering Business Certificate, and is completing a minor in Artifial Intelligence and Machine Learning.",
+        "about2": "Informally, he has 6 years of experience working with HTML/CSS, 5 years with Python and Java, 4 years with SQL, and 2 years with Machine Learning Python libraries and technologies. Professionally, he has worked with Angular / HTML / CSS for 1.5 years. His interests lie in iOS app development and design, as well as optimization in system architecture design."
     },
     "shared": {
         "founder": "Marc Atasoy"

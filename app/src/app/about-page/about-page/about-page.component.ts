@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-about-page',
@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./about-page.component.scss']
 })
 export class AboutPageComponent implements OnInit {
+  closeDialog = new EventEmitter();
 
   constructor() { }
 
