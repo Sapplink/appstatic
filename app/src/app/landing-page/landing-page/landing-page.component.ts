@@ -22,11 +22,17 @@ export class LandingPageComponent implements OnInit {
   }
 
   openFounder() {
-    this.dialog.open(AboutPageComponent, {
+    let dialogRef = this.dialog.open(AboutPageComponent, {
       autoFocus: true,
       height: '68vh',
       width: '68vw'
-    }); 
+    });
+    const subscription = dialogRef.componentInstance.closeDialog.subscribe(() => {
+      dialogRef.close();
+    });
+    dialogRef.afterClosed().subscribe(() => {
+      subscription.unsubscribe();
+    });
   }
 
 
