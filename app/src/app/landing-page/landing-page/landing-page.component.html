@@ -1,11 +1,5 @@
 <div class="row">    
-    <div  [ngClass]="(navigationAccordionOpen) ? 'col-md-12 language-bar-open' : 'col-md-12 language-bar-closed'">
-    </div>
-    <div class="col-md-12 thin-nav">
-        <img src='../../../assets/images/logo-white.png'>
-        <i class="material-icons icon" *ngIf="!navigationAccordionOpen" (click)="toggleNavigation()" [title]="openMenu">menu</i>
-        <i class="material-icons icon" *ngIf="navigationAccordionOpen" (click)="toggleNavigation()" [title]="closeMenu">close</i>
-    </div>
+    <app-navigation></app-navigation>
     <br>
     <div class="col-md-12">
         <span class="title">{{ 'landingPage.contents.sapplinkSolutions' | translate }}</span>

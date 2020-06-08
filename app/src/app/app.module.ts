@@ -11,6 +11,8 @@ import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import { MatDialogModule, MAT_DIALOG_DEFAULT_OPTIONS } from '@angular/material/dialog';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AboutPageComponent } from './about-page/about-page/about-page.component';
+import { NavigationComponent } from './navigation/navigation/navigation.component';
+// import { DesignsPageComponent } from './designs-page/designs-page/designs-page.component';
 
 
 export function HttpLoaderFactory(http: HttpClient) {
@@ -21,7 +23,9 @@ export function HttpLoaderFactory(http: HttpClient) {
   declarations: [
     AppComponent,
     LandingPageComponent,
-    AboutPageComponent
+    AboutPageComponent,
+    // DesignsPageComponent,
+    NavigationComponent
   ],
   imports: [
     BrowserModule,
