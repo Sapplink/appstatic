@@ -22,4 +22,10 @@ describe('NavigationComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should disable navigation menu', () => {
+    expect(component.navigationDisabled).toBe(false);
+    component.toggleNavigationBar();
+    expect(component.navigationDisabled).toBe(true);
+  });
 });
