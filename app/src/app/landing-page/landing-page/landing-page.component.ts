@@ -9,19 +9,15 @@ import { AboutPageComponent } from '../../about-page/about-page/about-page.compo
   styleUrls: ['./landing-page.component.scss']
 })
 export class LandingPageComponent implements OnInit {
-  navigationAccordionOpen = false;
 
-  constructor(private translate:TranslateService, public dialog: MatDialog) {
+  constructor(private translate:TranslateService, 
+    public dialog: MatDialog) {
   }
 
   ngOnInit(): void {
   }
 
-  toggleNavigation(): void {
-    this.navigationAccordionOpen = !this.navigationAccordionOpen;
-  }
-
-  openFounder() {
+  openFounder(): void {
     let dialogRef = this.dialog.open(AboutPageComponent, {
       autoFocus: true,
       height: '68vh',
@@ -38,12 +34,6 @@ export class LandingPageComponent implements OnInit {
 
   // Title Hover Getters From Copydeck
 
-  get openMenu() {
-    return this.translate.instant('navigation.menuOpen');
-  }  
-  get closeMenu() {
-    return this.translate.instant('navigation.menuClose');
-  }
   get aboutFounder(): string {
     return this.translate.instant('landingPage.contents.founderHover');
   }
