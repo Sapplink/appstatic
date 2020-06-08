@@ -28,7 +28,20 @@
         background-color: $secondary-green;
         transition: height 0.5s ease-in-out;
     }
-
+    .language-bar-open-disabled {
+        height: 4em;
+        margin: auto;
+        background-color: $secondary-green;
+        transition: height 0.5s ease-in-out;
+        pointer-events: none;
+    }
+    .language-bar-closed-disabled {
+        height: 0.2em;
+        margin: auto;
+        background-color: $secondary-green;
+        transition: height 0.5s ease-in-out;
+        pointer-events: none;
+    }
     .thin-nav {
         height: auto;
         margin: auto;

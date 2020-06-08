@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { MatDialog } from '@angular/material/dialog';
 import { AboutPageComponent } from '../../about-page/about-page/about-page.component';
+import { StateService } from 'src/app/state.service';
 
 @Component({
   selector: 'app-landing-page',
@@ -11,23 +12,27 @@ import { AboutPageComponent } from '../../about-page/about-page/about-page.compo
 export class LandingPageComponent implements OnInit {
 
   constructor(private translate:TranslateService, 
-    public dialog: MatDialog) {
+    public dialog: MatDialog,
+    private stateService: StateService) {
   }
 
   ngOnInit(): void {
   }
 
   openFounder(): void {
+    this.stateService.disableNavigationMenu();
     let dialogRef = this.dialog.open(AboutPageComponent, {
       autoFocus: true,
       height: '68vh',
-      width: '68vw'
+      width: '68vw',
+      disableClose: false,
     });
     const subscription = dialogRef.componentInstance.closeDialog.subscribe(() => {
       dialogRef.close();
     });
     dialogRef.afterClosed().subscribe(() => {
       subscription.unsubscribe();
+      this.stateService.enableNavigationMenu();
     });
   }
 

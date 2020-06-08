@@ -16,15 +16,24 @@ export class NavigationComponent implements OnInit {
   }
 
   toggleNavigationBar() {
-    this.stateService.toggleNavigation();
+    if (!this.navigationDisabled) {
+      this.stateService.toggleNavigation();
+    }
   }
 
   get navigationAccordionStatus(): boolean {
     return this.stateService.navigationAccordionOpen;
   }
+
+  get navigationDisabled(): boolean {
+    return (this.stateService.navigationClickable === false);
+  }
+
+  get navigationMenuStyling() {
+    return ((this.navigationAccordionStatus) ? 'col-md-12 language-bar-open' : 'col-md-12 language-bar-closed');
+  }
   
   // Title Hover Getters From Copydeck
-
   get openMenu(): string {
     return this.translate.instant('navigation.menuOpen');
   }  

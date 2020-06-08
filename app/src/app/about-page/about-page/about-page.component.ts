@@ -1,4 +1,5 @@
 import { Component, OnInit, EventEmitter } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-about-page',
@@ -8,7 +9,7 @@ import { Component, OnInit, EventEmitter } from '@angular/core';
 export class AboutPageComponent implements OnInit {
   closeDialog = new EventEmitter();
 
-  constructor() { }
+  constructor(public translate: TranslateService) { }
 
   ngOnInit(): void {
   }
