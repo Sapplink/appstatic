@@ -5,10 +5,19 @@ import { Injectable } from '@angular/core';
 })
 export class StateService {
   navigationAccordionOpen = false;
+  navigationClickable = true;
 
   constructor() { }
     
   toggleNavigation(): void {
     this.navigationAccordionOpen = !this.navigationAccordionOpen;
+  }
+
+  disableNavigationMenu(): void {
+    this.navigationClickable = false;
+  }
+
+  enableNavigationMenu(): void {
+    this.navigationClickable = true;
   }
 }
