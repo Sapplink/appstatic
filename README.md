@@ -11,3 +11,5 @@ UI - Typescript (Angular 9), HTML, (S)CSS
 RL - ExpressJS
   
 DB - MongoDB
+
+-----------------
