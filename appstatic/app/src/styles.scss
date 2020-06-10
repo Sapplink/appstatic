@@ -1,0 +1,44 @@
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+// Colour Themes
+
+$white: #efefef;
+$black: #161616;
+$primary-green: #8bd126;
+$secondary-green: #acf230;
+
+// Global Button
+
+button {
+    background-color: $black;
+    border: 1px solid $black;
+    color: $white;
+    border-collapse: separate;
+    border-radius: 3px !important;
+    width: 45%;
+    text-align: center !important;
+    padding: 5px;
+    margin: 15px auto 15px auto !important;
+    transition: background-color, color 0.3s ease-in-out;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+button:hover {
+    background-color: $white;
+    color: $black;
+}
+
+// Global small text
+.small-text {
+    font-family: Playfair Display;
+    font-weight: 400;
+    font-size: 11.8pt;
+    line-height: 30px;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+.close-button {
+    float: right;
+    cursor: pointer;
+}

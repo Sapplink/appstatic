@@ -1,0 +1,27 @@
+<div class="row">
+    <div class="col-md-12 about">
+        <i class="material-icons close-button" (click)="closeDialog.emit()">close</i>
+        <div class="image-cropper">
+            <img src="../../../assets/images/marc-img.png" alt="avatar" class="profile-pic">
+        </div>
+        <div class="col-md-12 small-text">
+            <u><span id="founderName">
+                {{ 'shared.founder' | translate }}
+            </span></u>
+            <br>
+            <span id="founderAge">
+                {{ 'aboutPage.age' | translate }}
+            </span>
+        </div>
+        <div class="col-md-6 small-text-2">
+            <span id="founderName">
+                {{ 'aboutPage.about1' | translate }}
+            </span>
+        </div>        
+        <div class="col-md-6 small-text-2">
+            <span id="founderName">
+                {{ 'aboutPage.about2' | translate }}
+            </span>
+        </div>
+    </div>
+</div>

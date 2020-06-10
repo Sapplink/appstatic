@@ -1,0 +1,11 @@
+<div class="row">
+    <div class="col-md-12">  
+        <div [ngClass]="navigationMenuStyling">
+        </div>
+        <div class="col-md-12 thin-nav">
+            <img src='../../../assets/images/logo-white.png'>
+            <i class="material-icons icon" *ngIf="!navigationAccordionStatus" (click)="toggleNavigationBar()" [title]="openMenu">menu</i>
+            <i class="material-icons icon" *ngIf="navigationAccordionStatus" (click)="toggleNavigationBar()" [title]="closeMenu">close</i>
+        </div>
+    </div>
+</div>
