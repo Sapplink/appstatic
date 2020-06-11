@@ -1,0 +1,25 @@
+<div class="card-container">
+    <div class="col-md-12 header-img">
+        <img [src]="imageURL">
+    </div>
+    <div class="col-md-12 card-title">
+        <span> {{ cardTitle }} </span>
+    </div>
+    <div class="col-md-12 card-tags">
+        <span>Tags: </span>
+        <br>
+        <div *ngFor="let tag of cardTags">
+            <span class="tag"> {{ tag }} </span>
+        </div>
+    </div>
+    <div class="col-md-12 card-activity">
+        <div>
+            <i class="material-icons likes-button">favorite</i>
+            <span>{{ numberOfLikes }}</span>
+        </div>
+        <div>
+            <i class="material-icons views-button">remove_red_eye</i>
+            <span>{{ numberOfViews }}</span>
+        </div>
+    </div>
+</div>

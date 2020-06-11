@@ -12,6 +12,8 @@ import { MatDialogModule, MAT_DIALOG_DEFAULT_OPTIONS } from '@angular/material/d
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AboutPageComponent } from './about-page/about-page/about-page.component';
 import { NavigationComponent } from './navigation/navigation/navigation.component';
+import { DesignsPageComponent } from './designs-page/designs-page/designs-page.component';
+import { CardComponent } from './card/card/card.component';
 // import { DesignsPageComponent } from './designs-page/designs-page/designs-page.component';
 
 
@@ -25,7 +27,9 @@ export function HttpLoaderFactory(http: HttpClient) {
     LandingPageComponent,
     AboutPageComponent,
     // DesignsPageComponent,
-    NavigationComponent
+    NavigationComponent,
+    DesignsPageComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,

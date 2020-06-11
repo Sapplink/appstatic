@@ -1,0 +1,52 @@
+@import '../../../styles.scss';
+
+.card-container {
+    width: 13em;
+    height: 17em;
+    border: 1px solid $white;
+    box-shadow: 0px 0px 8px 0.1px $white;
+    outline: 10px solid transparent;
+    margin: auto;
+
+    .header-img {
+        padding: none !important;
+        margin-left: -7.5%;
+        img {
+            width: 13em;
+        }
+    }
+
+    .card-title {
+        font-family: Playfair Display;
+        font-weight: 400;
+        font-size: 13pt;
+        line-height: 30px;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+        margin-right: 10px;
+    }
+
+    .card-tags {
+        font-family: Playfair Display;
+        font-weight: 400;
+        font-size: 8pt;
+        line-height: 30px;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+        padding: 5px;
+
+        .tag {
+            background-color: $primary-green;
+            border-radius: 10px;
+            margin-right: 10px;
+            padding: 5px;
+        }
+    }
+
+    .card-activity {
+        display: inline;
+        .likes-button, .views-button {
+            font-size: 12pt;
+        }
+    }
+}
