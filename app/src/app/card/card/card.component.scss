@@ -1,8 +1,8 @@
 @import '../../../styles.scss';
 
 .card-container {
-    width: 13em;
-    height: 17em;
+    width: 13%;
+    height: 22%;
     border: 1px solid $white;
     box-shadow: 0px 0px 8px 0.1px $white;
     outline: 10px solid transparent;
@@ -10,9 +10,9 @@
 
     .header-img {
         padding: none !important;
-        margin-left: -7.5%;
+        margin-left: -6.4% !important;
         img {
-            width: 13em;
+            width: 114.4%;
         }
     }
 
@@ -39,7 +39,7 @@
             background-color: $primary-green;
             border-radius: 10px;
             margin-right: 10px;
-            padding: 5px;
+            padding: 6px;
         }
     }
 

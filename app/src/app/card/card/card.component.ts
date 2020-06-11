@@ -26,4 +26,9 @@ export class CardComponent implements OnInit {
     return this.cardTags.length < 3;
   }
 
+  tagsGreaterThanThree() {
+    const tags = this.cardTags.slice(0,3);
+    return tags;
+  }
+
 }

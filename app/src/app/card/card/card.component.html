@@ -8,8 +8,16 @@
     <div class="col-md-12 card-tags">
         <span>Tags: </span>
         <br>
-        <div *ngFor="let tag of cardTags">
-            <span class="tag"> {{ tag }} </span>
+        <div *ngIf="shouldDisplayAllTags">
+            <div *ngFor="let tag of cardTags; index as i">
+                <span class="tag"> {{ tag }} </span>
+            </div>
+        </div>
+        <div *ngIf="!shouldDisplayAllTags">
+            <div *ngFor="let tag of tagsGreaterThanThree(); index as i">
+                <span class="tag"> {{ tag }} </span>
+            </div>
+            <span>...</span>
         </div>
     </div>
     <div class="col-md-12 card-activity">
