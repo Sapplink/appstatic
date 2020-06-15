@@ -1,0 +1,34 @@
+{
+    "navigation": {
+        "menuOpen": "Goster",
+        "menuClose": "Sakla"
+    },
+    "landingPage": {
+        "contents": {
+            "founderHover": "About the owner",
+            "companyMotto": "Dizayn. Yarat. Yenile | Toronto, Istanbul",
+            "sapplinkSolutions": "Sapplink Solutions",
+            "projectsDescriptionPartOne": "Toronto'da 2017'de ",
+            "projectsDescriptionPartTwo": " tarafindan bulunmustur. Sapplink'in misyonu yarattigi aplikasyonlari tamamiylen ev-icinde uretmektir. Fokus'u Grafik UX/UI dizayn, sistem mimari planlamasi, veri akisi organizasyonu, ve iOS/web aplikasyon gelismesidir. Sapplink hem kendi urunlerini uretir, hemde serbest calisip danisman olarak musteri tarafindan kiralanilabilir.",
+            "buttons": {
+                "projectsButton": "Projeler",
+                "designsButton": "Dizaynlar",
+                "projectsButtonHover": "Teknikleri gormek istiyorum!",
+                "designsButtonHover": "Kendimi yaratici hiisediyorum!"
+            }
+        },
+        "clientelle": {
+            "clients": "Musteriler",
+            "utefa": "University of Toronto Engineers Finance Association",
+            "intact": "Intact Insurance"
+        }
+    },
+    "aboutPage": {
+        "age": "22",
+        "about1": "Istanbul'da, 1998 de dogan, Kanada'li Marc Merih Atasoy, University of Toronto'da muhendislik okumaktadir. Endustri Muhendisliginde uzmanligini Yoneylem Arastirmasinda yapmaktadir, ve ikincil olarak Yapay Zeka ve Makina Ogrenme okruken, ayni zamanda da Muhendislik Ticaret Sertifikasi almistir. Endustri Muhendisliginde BASc.",
+        "about2": "6 yildir HTML5/CSS ile, 5 yildir Python ve Java ile, 4 yildir SQL ile, ve de 2 yildir Yapay Zeka ile calisan Marc Merih, ayni zamanda profesyonel olarak ile 1.5 yildir Angular / HTML / CSS ile calismisligi vardir. Ilgi alani sistem mimarisi tasarımında optimizasyon, ve iOS aplikasyonlari ve dizaynlari gelistirmektir."
+    },
+    "shared": {
+        "founder": "Marc Atasoy"
+    }
+}
