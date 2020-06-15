@@ -27,9 +27,9 @@ export class AppComponent implements OnInit {
 
   setApplicationLanguage(): void {
     // To be edited when Turkish is added.
-    this.translate.addLangs(['en']);
-    this.translate.setDefaultLang('en');
-    this.translate.use('en');
+    this.translate.addLangs(['en', 'tr']);
+    this.translate.setDefaultLang('tr');
+    this.translate.use('tr');
   }
 
   navigateTo(url: Routes): void {
