@@ -1,6 +1,6 @@
 # appstatic
 
-The freelance website for Sapplink. Portfolio and showcase of past products and designs, along with a provider of a platform and hub for people interested, clients, and a general online presence. Designed and developed fully by Marc Atasoy, founder and owner of Sapplink.
+The online presence for Sapplink. Portfolio and showcase of past apps and designs. Designed and developed by Marc Atasoy, owner of Sapplink.
 --------------------
 # creation
 
