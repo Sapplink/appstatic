@@ -1,6 +1,6 @@
 # appstatic
 
-The online presence for Sapplink. Portfolio and showcase of past apps and designs. Designed and developed by Marc Atasoy, owner of Sapplink.
+The online presence for Sapplink. Portfolio and showcase of past apps and designs. Designed and developed by Marc Atasoy.
 --------------------
 # creation
 
