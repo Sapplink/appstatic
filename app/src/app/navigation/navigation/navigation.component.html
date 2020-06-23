@@ -1,6 +1,12 @@
 <div class="row">
     <div class="col-md-12">  
         <div [ngClass]="navigationMenuStyling">
+            <ul class="nav-menu-items">
+                <li routerLink="/landing-page" routerLinkActive="active">{{ 'navigation.home' | translate }}</li>
+                <li routerLink="/designs" routerLinkActive="active">{{ 'navigation.archives' | translate }}</li>
+                <li routerLink="/designs" routerLinkActive="active">{{ 'navigation.about' | translate }}</li>
+                <li routerLink="/designs" routerLinkActive="active">{{ 'navigation.contact' | translate }}</li>
+            </ul>
         </div>
         <div class="col-md-12 thin-nav">
             <img src='../../../assets/images/logo-white.png'>

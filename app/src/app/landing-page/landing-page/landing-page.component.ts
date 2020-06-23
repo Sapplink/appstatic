@@ -11,7 +11,7 @@ import { StateService } from 'src/app/state.service';
 })
 export class LandingPageComponent implements OnInit {
 
-  constructor(private translate:TranslateService, 
+  constructor(private translate: TranslateService, 
     public dialog: MatDialog,
     private stateService: StateService) {
   }
