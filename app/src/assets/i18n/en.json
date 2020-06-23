@@ -1,7 +1,11 @@
 {
     "navigation": {
         "menuOpen": "Display Menu",
-        "menuClose": "Hide Menu"
+        "menuClose": "Hide Menu",
+        "home": "HOME",
+        "archives": "ARCHIVES",
+        "contact": "CONTACT",
+        "about": "ABOUT"
     },
     "landingPage": {
         "contents": {
@@ -29,6 +33,8 @@
         "about2": "Informally, he has 6 years of experience working with HTML/CSS, 5 years with Python and Java, 4 years with SQL, and 2 years with Machine Learning Python libraries and technologies. Professionally, he has worked with Angular / HTML / CSS for 1.5 years. His interests lie in iOS app development and design, as well as optimization in system architecture design."
     },
     "shared": {
-        "founder": "Marc Atasoy"
+        "founder": "Marc Atasoy",
+        "en": "EN",
+        "tr": "TR"
     }
 }

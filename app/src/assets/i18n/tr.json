@@ -1,7 +1,11 @@
 {
     "navigation": {
-        "menuOpen": "Goster",
-        "menuClose": "Sakla"
+        "menuOpen": "Display Menu",
+        "menuClose": "Hide Menu",
+        "home": "HOME",
+        "archives": "ARCHIVES",
+        "contact": "CONTACT",
+        "about": "ABOUT"
     },
     "landingPage": {
         "contents": {
