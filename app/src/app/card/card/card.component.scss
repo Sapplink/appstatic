@@ -1,7 +1,7 @@
 @import '../../../styles.scss';
 
 .card-container {
-    width: 13%;
+    width: 13em;
     height: 22%;
     border: 1px solid $white;
     box-shadow: 0px 0px 8px 0.1px $white;
@@ -12,7 +12,7 @@
         padding: none !important;
         margin-left: -6.4% !important;
         img {
-            width: 114.4%;
+            width: 12.8em;
         }
     }
 
@@ -28,25 +28,38 @@
 
     .card-tags {
         font-family: Playfair Display;
-        font-weight: 400;
         font-size: 8pt;
         line-height: 30px;
         text-rendering: optimizeLegibility;
         -webkit-font-smoothing: antialiased;
         padding: 5px;
+        display: inline;
+        white-space: nowrap;
 
-        .tag {
-            background-color: $primary-green;
-            border-radius: 10px;
-            margin-right: 10px;
-            padding: 6px;
+        .tag-holder {
+            display: inline-flex;
+        
+            .tag {
+                background-color: $primary-green;
+                border-radius: 10px;
+                margin-right: 10px;
+                padding: 6px;
+                white-space: nowrap;
+                font-weight: bold !important;
+            }
         }
     }
 
     .card-activity {
-        display: inline;
+        display: inline-flex;
+
+        div {
+            margin: auto;
+        }
+
         .likes-button, .views-button {
             font-size: 12pt;
+            padding: 2px;
         }
     }
 }
