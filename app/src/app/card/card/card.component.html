@@ -8,12 +8,12 @@
     <div class="col-md-12 card-tags">
         <span>Tags: </span>
         <br>
-        <div *ngIf="shouldDisplayAllTags">
+        <div class="tag-holder" *ngIf="shouldDisplayAllTags">
             <div *ngFor="let tag of cardTags; index as i">
                 <span class="tag"> {{ tag }} </span>
             </div>
         </div>
-        <div *ngIf="!shouldDisplayAllTags">
+        <div class="tag-holder" *ngIf="!shouldDisplayAllTags">
             <div *ngFor="let tag of tagsGreaterThanThree(); index as i">
                 <span class="tag"> {{ tag }} </span>
             </div>
@@ -29,15 +29,4 @@
             <i class="material-icons views-button">remove_red_eye</i>
             <span>{{ numberOfViews }}</span>
         </div>
-    </div>
-        <div class="col-md-12 card-activity">
-        <div>
-            <i class="material-icons likes-button">favorite</i>
-            <span>{{ numberOfLikes }}</span>
-        </div>
-        <div>
-            <i class="material-icons views-button">remove_red_eye</i>
-            <span>{{ numberOfViews }}</span>
-        </div>
-    </div>
 </div>
