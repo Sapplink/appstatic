@@ -1,7 +1,9 @@
 <div class="row">
-    <!-- MUST CONVERT ALL INPUTS INTO GETTERS AND MOVE TO .TS FILE -->
-    <div class="col-md-12">
-        <button (click)="addPost()">Add Design</button>
+    <div class="col-md-12 design">
+        <div class="title">
+            <span>{{ 'designsPage.title' | translate }}</span>
+        </div>
+        <button (click)="addPost()">{{ 'designsPage.addDesign' | translate }}</button>
         <div class="cards" *ngFor="let card of cards">
             <app-card [imageURL]="'assets/images/' + card.data.cardImg"
                 [cardTitle]="card.data.cardTitle"

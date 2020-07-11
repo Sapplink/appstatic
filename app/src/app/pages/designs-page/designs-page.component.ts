@@ -25,7 +25,9 @@ export class DesignsPageComponent implements OnInit {
       disableClose: false,
     });
     dialogRef.afterClosed().subscribe((data: Card) => {
-      this.cards.push(data);
+      if (data) {
+        this.cards.push(data);
+      }
     });
   }
 }

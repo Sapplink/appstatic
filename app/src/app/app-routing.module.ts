@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { LandingPageComponent } from './landing-page/landing-page/landing-page.component';
-import { DesignsPageComponent } from './designs-page/designs-page/designs-page.component';
+import { DesignsPageComponent } from './pages/designs-page/designs-page.component';
+import { ProjectsPageComponent } from './pages/projects-page/projects-page.component';
 
 
 const routes: Routes = [
@@ -15,8 +16,8 @@ const routes: Routes = [
   },
   {
     path: 'projects',
-    component: LandingPageComponent
-  }
+    component: ProjectsPageComponent
+  },
 ];
 
 @NgModule({

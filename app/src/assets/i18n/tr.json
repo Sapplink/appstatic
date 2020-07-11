@@ -27,6 +27,14 @@
             "inago": "iNAGO"
         }
     },
+    "designsPage": {
+        "title": "Tasarimlar",
+        "addDesign": "Tasarim Ekle"
+    },
+    "projectsPage": {
+        "title": "Projeler",
+        "addProject": "Proje Ekle"
+    },
     "aboutPage": {
         "age": "22",
         "about1": "Istanbul'da, 1998 de dogan, Kanada'li Marc Merih Atasoy, University of Toronto'da muhendislik okumaktadir. Endustri Muhendisliginde uzmanligini Yoneylem Arastirmasinda yapmaktadir, ve ikincil olarak Yapay Zeka ve Makina Ogrenme okruken, ayni zamanda da Muhendislik Ticaret Sertifikasi almistir. Endustri Muhendisliginde BASc.",

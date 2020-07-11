@@ -16,12 +16,14 @@ export class CardComponent implements OnInit {
   ngOnInit(): void {
     if (this.cardTags && this.cardTags.includes(',')) {
       this.tags = this.cardTags.split(',');
+    } else if (this.cardTags && !this.cardTags.includes(',')) {
+      this.tags = (this.cardTags.split(' '));
     }
   }
 
   get shouldDisplayAllTags(): boolean {
     if (this.tags) {
-      return this.tags.length < 3;
+      return this.tags.length <= 3;
     }
   }
 

@@ -1,0 +1,20 @@
+.design {
+    margin: auto;
+    text-align: center;
+    vertical-align: middle;
+    button {
+        width: 8em;
+        margin-left: 20%;
+    }
+    app-card {
+        display: inline-flexbox;
+        margin: auto;
+    }
+    span {
+        font-family: Merriweather;
+        font-size: 22pt;
+        -webkit-font-smoothing: antialiased;
+        margin: auto;
+        text-align: center;
+    }
+}
