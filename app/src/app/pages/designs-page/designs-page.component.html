@@ -2,8 +2,10 @@
     <div class="col-md-12 design">
         <div class="title">
             <span>{{ 'designsPage.title' | translate }}</span>
-        </div>
+            <br>
+            <!-- Add an ngIf after RL user created to display button only for developer -->
         <button (click)="addPost()">{{ 'designsPage.addDesign' | translate }}</button>
+        </div>
         <div class="cards" *ngFor="let card of cards">
             <app-card [imageURL]="'assets/images/' + card.data.cardImg"
                 [cardTitle]="card.data.cardTitle"
