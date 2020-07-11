@@ -1,22 +1,21 @@
 {
     "navigation": {
-        "menuOpen": "Display Menu",
-        "menuClose": "Hide Menu",
-        "home": "HOME",
-        "archives": "ARCHIVES",
-        "contact": "CONTACT",
-        "about": "ABOUT"
+        "menuOpen": "Ac",
+        "menuClose": "Sakla",
+        "home": "ANASAYFA",
+        "contact": "ILETISIM",
+        "about": "REFERANSLAR"
     },
     "landingPage": {
         "contents": {
-            "founderHover": "About the owner",
-            "companyMotto": "Dizayn. Yarat. Yenile | Toronto, Istanbul",
+            "founderHover": "Kurucu hakkinda",
+            "companyMotto": "Tasarla. Yarat. Yenile | Toronto, Istanbul",
             "sapplinkSolutions": "Sapplink Solutions",
             "projectsDescriptionPartOne": "Toronto'da 2017'de ",
-            "projectsDescriptionPartTwo": " tarafindan kurulmustur. Sapplink'in misyonu yarattigi aplikasyonlari tamamiylen ev-icinde uretmektir. Grafik UX/UI dizayn, sistem mimari planlamasi, veri akisi organizasyonu, ve iOS/web aplikasyon gelismesinde ustunluk kurmustur. Sapplink hem kendi urunlerini uretir, hemde serbest calisip danisman olarak musteri tarafindan kiralanilabilir.",
+            "projectsDescriptionPartTwo": " tarafindan kurulmustur. Sapplink'in misyonu yarattigi uygulamalari tamamiyle ev-icinde uretmektir. Grafik UX/UI tasarim, sistem mimari planlamasi, veri akisi organizasyonu, ve iOS/web uygulamalarinin gelismesinde ustunluk kurmustur. Sapplink hem kendi projeleri ustunde calisip, hemde serbest bir danisman olarak musteri tarafindan kiralanilabilir.",
             "buttons": {
                 "projectsButton": "Projeler",
-                "designsButton": "Dizaynlar",
+                "designsButton": "Tasarimlar",
                 "projectsButtonHover": "Teknikleri gormek istiyorum!",
                 "designsButtonHover": "Kendimi yaratici hisediyorum!"
             }
@@ -31,7 +30,7 @@
     "aboutPage": {
         "age": "22",
         "about1": "Istanbul'da, 1998 de dogan, Kanada'li Marc Merih Atasoy, University of Toronto'da muhendislik okumaktadir. Endustri Muhendisliginde uzmanligini Yoneylem Arastirmasinda yapmaktadir, ve ikincil olarak Yapay Zeka ve Makina Ogrenme okruken, ayni zamanda da Muhendislik Ticaret Sertifikasi almistir. Endustri Muhendisliginde BASc.",
-        "about2": "6 yildir HTML5/CSS ile, 5 yildir Python ve Java ile, 4 yildir SQL ile, ve de 2 yildir Yapay Zeka ile calisan Marc Merih, ayni zamanda profesyonel olarak ile 1.5 yildir Angular / HTML / CSS ile calismisligi vardir. Ilgi alani sistem mimarisi tasarımında optimizasyon, ve iOS aplikasyonlari ve dizaynlari gelistirmektir."
+        "about2": "6 yildir HTML5/CSS ile, 5 yildir Python ve Java ile, 4 yildir SQL ile, ve de 2 yildir Yapay Zeka ile calisan Marc Merih, ayni zamanda profesyonel olarak ile 1.5 yildir Angular / HTML / CSS ile calismisligi vardir. Ilgi alani sistem mimarisi tasarımında optimizasyon, ve iOS uygulamalari ve tasarimlari gelistirmektir."
     },
     "shared": {
         "founder": "Marc Atasoy"
