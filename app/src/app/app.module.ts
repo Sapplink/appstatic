@@ -14,6 +14,8 @@ import { AboutPageComponent } from './about-page/about-page/about-page.component
 import { NavigationComponent } from './navigation/navigation/navigation.component';
 import { DesignsPageComponent } from './designs-page/designs-page/designs-page.component';
 import { CardComponent } from './card/card/card.component';
+import { AddPostComponent } from './add-post/add-post/add-post.component';
+import { ReactiveFormsModule } from '@angular/forms';
 // import { DesignsPageComponent } from './designs-page/designs-page/designs-page.component';
 
 
@@ -29,13 +31,15 @@ export function HttpLoaderFactory(http: HttpClient) {
     // DesignsPageComponent,
     NavigationComponent,
     DesignsPageComponent,
-    CardComponent
+    CardComponent,
+    AddPostComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     MatDialogModule,
+    ReactiveFormsModule,
     BrowserAnimationsModule,
     TranslateModule.forRoot({
       loader: {

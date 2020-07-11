@@ -8,27 +8,28 @@ import { Component, OnInit, Input } from '@angular/core';
 export class CardComponent implements OnInit {
   @Input() imageURL: string;
   @Input() cardTitle: string;
-  @Input() cardTags: string[];
-  @Input() numberOfLikes: number;
-  @Input() numberOfViews: number;
+  @Input() cardTags: string;
+  tags: string[];
 
   constructor() { }
 
   ngOnInit(): void {
-    this.imageURL = '../../../assets/images/ai_stock.jpg';
-    this.cardTitle = 'Machine Learning with Finance';
-    this.cardTags = ['AI', 'ML', 'Finance', 'Fintech', 'Blog'];
-    this.numberOfLikes = 374;
-    this.numberOfViews = 6723;
+    if (this.cardTags && this.cardTags.includes(',')) {
+      this.tags = this.cardTags.split(',');
+    }
   }
 
   get shouldDisplayAllTags(): boolean {
-    return this.cardTags.length < 3;
+    if (this.tags) {
+      return this.tags.length < 3;
+    }
   }
 
   tagsGreaterThanThree() {
-    const tags = this.cardTags.slice(0,3);
-    return tags;
+    if (this.tags) {
+      const tags = this.tags.slice(0,3);
+      return tags;
+    }
   }
 
 }

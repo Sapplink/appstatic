@@ -25,6 +25,7 @@
             display: inline-flex;
             font-style: none;
             margin: auto;
+            padding: 2px;
             list-style: none;
             pointer-events: pointer;
             height: 5%;
@@ -72,12 +73,13 @@
         margin: auto;
         background-color: $black;
 
-        .lang-icon {
+        .flag-turkey, .flag-england {
+            height: 20px;
             float: right;
-            font-size: 12pt;
-            margin: 9px;
+            margin-top: 7px;
+            padding: 4px;
         }
-
+        
         i {
             color: white;
             float: left;

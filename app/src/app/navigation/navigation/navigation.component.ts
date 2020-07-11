@@ -9,35 +9,23 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class NavigationComponent implements OnInit {
 
-  currLang: string;
   @Output() changeLanguage = new EventEmitter();
 
   constructor(private stateService: StateService,
     private translate: TranslateService) { }
 
   ngOnInit(): void {
-    this.setCurrLang();
   }
 
   toggleNavigationBar() {
     if (!this.navigationDisabled) {
       this.stateService.toggleNavigation();
     }
-
   }
 
-  toggleLanguage() {
-    if (this.stateService.currentApplicationLanguage === 'en') {
-      this.stateService.currentApplicationLanguage = 'tr';
-    } else {
-      this.stateService.currentApplicationLanguage = 'en';
-    }
-    this.setCurrLang();
+  toggleLanguageTo(lang: string) {
+    this.stateService.currentApplicationLanguage = lang;
     this.changeLanguage.emit();
-  }
-
-  setCurrLang() {
-    this.currLang = (this.stateService.currentApplicationLanguage === 'en') ? 'TR' : 'EN';
   }
 
   get navigationAccordionStatus(): boolean {
