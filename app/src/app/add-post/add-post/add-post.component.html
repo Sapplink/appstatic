@@ -1,0 +1,9 @@
+<form [formGroup]="formGroup">
+    Post Title:
+    <input type="text" name="card-title" [formControl]="cardTitle">
+    Post Tags:
+    <input type="text" name="card-tags" [formControl]="cardTags">
+    Post Background Image:
+    <input type="file" name="background-img" (change)="onImgUpload($event)">
+    <button type="submit" (click)="createCard()">Submit</button>
+</form>
