@@ -6,6 +6,7 @@ import { Injectable } from '@angular/core';
 export class StateService {
   navigationAccordionOpen = false;
   navigationClickable = true;
+  currentApplicationLanguage = 'en';
 
   constructor() { }
     

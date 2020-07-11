@@ -54,5 +54,8 @@ export class LandingPageComponent implements OnInit {
   get intactTitle(): string {
     return this.translate.instant('landingPage.clientelle.intact');
   }
+  get inagoTitle(): string {
+    return this.translate.instant('landingPage.clientelle.inago');
+  }
 
 }

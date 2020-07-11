@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { StateService } from 'src/app/state.service';
 import { TranslateService } from '@ngx-translate/core';
 
@@ -8,6 +8,9 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrls: ['./navigation.component.scss']
 })
 export class NavigationComponent implements OnInit {
+
+  currLang: string;
+  @Output() changeLanguage = new EventEmitter();
 
   constructor(private stateService: StateService,
     private translate: TranslateService) { }
@@ -19,6 +22,16 @@ export class NavigationComponent implements OnInit {
     if (!this.navigationDisabled) {
       this.stateService.toggleNavigation();
     }
+  }
+
+  toggleLanguage() {
+    if (this.stateService.currentApplicationLanguage === 'en') {
+      this.stateService.currentApplicationLanguage = 'tr';
+    } else {
+      this.stateService.currentApplicationLanguage = 'en';
+    }
+    this.currLang = this.stateService.currentApplicationLanguage;
+    this.changeLanguage.emit();
   }
 
   get navigationAccordionStatus(): boolean {

@@ -13,7 +13,7 @@
             "companyMotto": "Dizayn. Yarat. Yenile | Toronto, Istanbul",
             "sapplinkSolutions": "Sapplink Solutions",
             "projectsDescriptionPartOne": "Toronto'da 2017'de ",
-            "projectsDescriptionPartTwo": " tarafindan bulunmustur. Sapplink'in misyonu yarattigi aplikasyonlari tamamiylen ev-icinde uretmektir. Fokus'u Grafik UX/UI dizayn, sistem mimari planlamasi, veri akisi organizasyonu, ve iOS/web aplikasyon gelismesidir. Sapplink hem kendi urunlerini uretir, hemde serbest calisip danisman olarak musteri tarafindan kiralanilabilir.",
+            "projectsDescriptionPartTwo": " tarafindan kurulmustur. Sapplink'in misyonu yarattigi aplikasyonlari tamamiylen ev-icinde uretmektir. Grafik UX/UI dizayn, sistem mimari planlamasi, veri akisi organizasyonu, ve iOS/web aplikasyon gelismesinde ustunluk kurmustur. Sapplink hem kendi urunlerini uretir, hemde serbest calisip danisman olarak musteri tarafindan kiralanilabilir.",
             "buttons": {
                 "projectsButton": "Projeler",
                 "designsButton": "Dizaynlar",
@@ -22,9 +22,10 @@
             }
         },
         "clientelle": {
-            "clients": "Musteriler",
+            "clients": "Portföy",
             "utefa": "University of Toronto Engineers Finance Association",
-            "intact": "Intact Insurance"
+            "intact": "Intact Insurance",
+            "inago": "iNAGO"
         }
     },
     "aboutPage": {
