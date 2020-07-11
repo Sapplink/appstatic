@@ -1,7 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
 import { AddPostService } from '../add-post.service';
-import { MatDialogRef } from '@angular/material/dialog';
+import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { Card } from 'src/app/card/card/card.model';
 
 @Component({
@@ -11,32 +11,27 @@ import { Card } from 'src/app/card/card/card.model';
 })
 export class AddPostComponent implements OnInit {
   formGroup: FormGroup;
-  constructor(private addPost: AddPostService, private dialogRef: MatDialogRef<AddPostComponent>) {
+  file: File;
+  constructor(private addPost: AddPostService, private dialogRef: MatDialogRef<AddPostComponent>,
+    @Inject(MAT_DIALOG_DATA) public data: Card) {
   }
 
   ngOnInit(): void {
     this.formGroup = this.addPost.form;
   }
 
-  onImgUpload(img) {
-    let url;
-    if (img.target.files && img.target.files[0]) {
-      var reader = new FileReader();
-      reader.readAsDataURL(img.target.files[0]); // read file as data url
-      reader.onload = (img) => { // called once readAsDataURL is completed
-        url = img.target.result;
-      }
-    }
-    // console.log(url);
-    this.formGroup.get('cardImg').setValue('../../../../assets/INTACT_LOGO.png');
+  onImgUpload(img: any) {
+    const file = img.target.files[0]
+    this.formGroup.get('cardImg').setValue(file);
   }
 
   createCard() {
     const card: Card = new Card;
     card.cardTitle = this.formGroup.get('cardTitle').value;
     card.cardTags = this.formGroup.get('cardTags').value;
-    card.cardImg = this.formGroup.get('cardImg').value;
-    this.dialogRef.close(card);
+    card.cardImg = (this.formGroup.get('cardImg').value).name;
+    this.formGroup.reset();
+    this.dialogRef.close({data: card});
   }
 
   get cardTitle() {
@@ -46,6 +41,6 @@ export class AddPostComponent implements OnInit {
     return this.formGroup.get('cardTags') as FormControl;
   }
   get cardImg() {
-    return this.formGroup.get('cardImg') as FormControl;
+    return this.formGroup.get('cardImg');
   }
 }

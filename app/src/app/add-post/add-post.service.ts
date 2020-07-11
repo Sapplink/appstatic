@@ -11,7 +11,7 @@ export class AddPostService {
     this.form = this.fb.group({
       cardTitle: ['', [Validators.required]],
       cardTags: ['', [Validators.required]],
-      cardImg: ['', Validators.required]
+      cardImg: new FormData()
     })
   }
 
