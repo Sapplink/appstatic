@@ -13,7 +13,7 @@
             "companyMotto": "Design. Develop. Innovate | Toronto, Istanbul",
             "sapplinkSolutions": "Sapplink Solutions",
             "projectsDescriptionPartOne": "Founded in Toronto in 2017 by",
-            "projectsDescriptionPartTwo": ", the purpose of Sapplink is to create applications developed fully in-house. Focused on and excelling in graphical/UX/UI design, system architecture planning, data flow organization, and app/web development, Sapplink is both a stand-alone freelancer creating its own products, and a contractor/consultancy available for hire.",
+            "projectsDescriptionPartTwo": ", Sapplink is to create applications developed fully in-house. Focused on and excelling in graphical and UX/UI design, system architecture planning, data flow organization, and app/web development, Sapplink is both a stand-alone freelancer creating its own products, and a contractor/consultancy available for hire.",
             "buttons": {
                 "projectsButton": "Projects",
                 "designsButton": "Designs",
@@ -22,14 +22,15 @@
             }
         },
         "clientelle": {
-            "clients": "Clients",
+            "clients": "Portfolio",
             "utefa": "University of Toronto Engineers Finance Association",
-            "intact": "Intact Insurance"
+            "intact": "Intact Insurance",
+            "inago": "iNAGO"
         }
     },
     "aboutPage": {
         "age": "22",
-        "about1": "Born in Istanbul in 1998, Marc Atasoy is a 22 year old Canadian innovator studying in his fourth year at University of Toronto, acquiring his BASc. in Industrial Engineering, specializing in Operations Research. He also holds an Engineering Business Certificate, and is completing a minor in Artifial Intelligence and Machine Learning.",
+        "about1": "Born in Istanbul, Marc is a Canadian innovator studying in his fourth year at University of Toronto, acquiring his BASc. in Industrial Engineering, specializing in Operations Research. He also holds an Engineering Business Certificate, and is completing a minor in Artifial Intelligence and Machine Learning.",
         "about2": "Informally, he has 6 years of experience working with HTML/CSS, 5 years with Python and Java, 4 years with SQL, and 2 years with Machine Learning Python libraries and technologies. Professionally, he has worked with Angular / HTML / CSS for 1.5 years. His interests lie in iOS app development and design, as well as optimization in system architecture design."
     },
     "shared": {

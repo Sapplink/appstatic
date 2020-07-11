@@ -28,11 +28,17 @@
             list-style: none;
             pointer-events: pointer;
             height: 5%;
-            padding: 5px;
+
+            a {
+                color: black;
+                font-family: Playfair Display;
+            }
 
             li {
                 margin: 15px;
                 margin-top: 10px !important;
+                pointer-events: pointer;
+                text-decoration: none;
             }
         }
     }
@@ -73,6 +79,10 @@
             font-size: 21pt;
             cursor: pointer;
             transition: 0.5s ease-in-out;
+        }
+
+        .language {
+            color: white;
         }
     }
 }
