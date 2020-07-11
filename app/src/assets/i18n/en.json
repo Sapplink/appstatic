@@ -34,11 +34,11 @@
     },
     "designsPage": {
         "title": "Designs",
-        "addDesign": "Add Design"
+        "addDesign": "Add New Design"
     },
     "projectsPage": {
         "title": "Projects",
-        "addProject": "Add Project"
+        "addProject": "Add New Project"
     },
     "references": {
         "rijuVashisht": "- Riju Vashist, Software Developer @ Capco",

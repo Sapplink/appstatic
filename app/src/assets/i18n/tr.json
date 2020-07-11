@@ -29,11 +29,11 @@
     },
     "designsPage": {
         "title": "Tasarimlar",
-        "addDesign": "Tasarim Ekle"
+        "addDesign": "Yeni Tasarim Ekle"
     },
     "projectsPage": {
         "title": "Projeler",
-        "addProject": "Proje Ekle"
+        "addProject": "Yeni Proje Ekle"
     },
     "references": {
         "rijuVashisht": "- Riju Vashist, Software Developer @ Capco",
