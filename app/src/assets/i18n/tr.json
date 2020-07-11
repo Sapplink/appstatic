@@ -4,7 +4,7 @@
         "menuClose": "Sakla",
         "home": "ANASAYFA",
         "contact": "ILETISIM",
-        "about": "REFERANSLAR"
+        "references": "REFERANSLAR"
     },
     "landingPage": {
         "contents": {
@@ -34,6 +34,16 @@
     "projectsPage": {
         "title": "Projeler",
         "addProject": "Proje Ekle"
+    },
+    "references": {
+        "rijuVashisht": "- Riju Vashist, Software Developer @ Capco",
+        "rijuVashishtReference": "\"Marc Atasoy is an extremely talented professional with vast skill in Angular and software development. His knowledge and awareness of best development practices might only be surpassed by his communication and team building skills. It was a plesaure to work with and learn from Marc.\"",
+        "kannanMuthiah": "- Kannan Muthiah, IT Commercial Lines Manager @ Intact",
+        "kannanMuthiahReference": "",
+        "cenkSayin": "- Cenk Sayin, Former President @ T.S.O.C",
+        "cenkSayinReference": "",
+        "daniyalAdeel": "- Daniyal Adeel, Presiden @ UTEFA",
+        "daniyalAdeelReference": ""
     },
     "aboutPage": {
         "age": "22",

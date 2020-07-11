@@ -1,0 +1,47 @@
+.reference1 {
+    margin-left: 150px;
+    width: 60%;
+    margin-top: 130px;
+
+    .ref {
+        font-family: Rosarivo;
+        font-style: italic;
+        text-align: center;
+        font-size: 21pt;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+    }
+
+    .refBy {
+        font-family: Merriweather;
+        font-size: 13pt;
+        float: right;
+        margin-left: 30px !important;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+    }
+}
+.reference2 {
+    margin-left: 450px;
+    width: 60%;
+    margin-top: 130px;
+    margin-bottom: 130px;
+
+    .ref {
+        font-family: Rosarivo;
+        font-style: italic;
+        text-align: center;
+        font-size: 21pt;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+    }
+
+    .refBy {
+        font-family: Merriweather;
+        font-size: 13pt;
+        // float: right;
+        margin-left: 130px !important;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+    }
+}

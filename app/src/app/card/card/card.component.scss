@@ -62,18 +62,4 @@
             }
         }
     }
-
-    .card-activity {
-        display: inline-flex;
-        color: $white;
-
-        div {
-            margin: auto;
-        }
-
-        .likes-button, .views-button {
-            font-size: 12pt;
-            padding: 2px;
-        }
-    }
 }
