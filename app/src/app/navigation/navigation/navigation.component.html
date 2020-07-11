@@ -12,10 +12,8 @@
             <img src='../../../assets/images/logo-white.png'>
             <i class="material-icons icon" *ngIf="!navigationAccordionStatus" (click)="toggleNavigationBar()" [title]="openMenu">menu</i>
             <i class="material-icons icon" *ngIf="navigationAccordionStatus" (click)="toggleNavigationBar()" [title]="closeMenu">close</i>
-            <span>
-                <i class="material-icons icon" (click)="toggleLanguage()">language</i>
-                <span class="language">{{ currLang }}</span>
-            </span>
+            <i class="material-icons lang-icon" (click)="toggleLanguage()">language</i>
+            <span class="language">{{ currLang }}</span>
         </div>
     <!-- </div> -->
 </div>
