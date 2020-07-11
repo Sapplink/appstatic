@@ -1,9 +1,17 @@
 @import '../../../styles.scss';
 
-.design {
+.design {    
     margin: auto;
     text-align: center;
     vertical-align: middle;
+
+    .title {
+        margin-right: 60px;
+    }
+
+    button {
+        width: 8em;
+    }
 
     button {
         width: 8em;
