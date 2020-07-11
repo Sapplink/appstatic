@@ -1,16 +1,17 @@
 <div class="card-container">
-    <a routerLink="/landing-page" routerLinkActive="active">
     <div class="col-md-12 header-img">
-        <img [src]="imageURL" class="img">
+        <div *ngIf="imageURL">
+            <img [src]="imageURL" class="img">
+        </div>
     </div>
     <div class="col-md-12 card-title">
-        <span> {{ cardTitle }} </span>
+        <a routerLink="/landing-page" routerLinkActive="active">{{ cardTitle }}</a>
     </div>
     <div class="col-md-12 card-tags">
         <span>Tags: </span>
         <br>
         <div class="tag-holder" *ngIf="shouldDisplayAllTags">
-            <div *ngFor="let tag of cardTags; index as i">
+            <div *ngFor="let tag of tags; index as i">
                 <span class="tag"> {{ tag }} </span>
             </div>
         </div>
@@ -21,13 +22,4 @@
             <span>...</span>
         </div>
     </div>
-    <div class="col-md-12 card-activity">
-        <div>
-            <i class="material-icons likes-button">favorite</i>
-            <span>{{ numberOfLikes }}</span>
-        </div>
-        <div>
-            <i class="material-icons views-button">remove_red_eye</i>
-            <span>{{ numberOfViews }}</span>
-        </div>
 </div>

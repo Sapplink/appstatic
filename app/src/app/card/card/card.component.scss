@@ -2,20 +2,20 @@
 
 .card-container {
     width: 14em;
-    height: 22%;
+    height: 12em;
     border: 1px solid $white;
+    border-radius: 6px;
     box-shadow: 0px 0px 8px 0.1px $white;
     outline: 10px solid transparent;
     margin: 5% auto;
     width: 13em;
-    height: 22%;
     overflow: hidden;
 
         img {
             display: inline;
-            margin: -170px -30px;
-            height: 100%;
-            width: auto;
+            z-index: 0;
+            height: 12em;
+            width: 14em;
             -webkit-filter: blur(4px);
         }
 
@@ -29,6 +29,10 @@
         -webkit-font-smoothing: antialiased;
         margin-right: 10px;
         color: $white;
+
+        a {
+            color: $white;
+        }
     }
 
     .card-tags {
@@ -44,6 +48,7 @@
 
         .tag-holder {
             display: inline-flex;
+            padding: 6px;
         
             .tag {
                 background-color: $primary-green;

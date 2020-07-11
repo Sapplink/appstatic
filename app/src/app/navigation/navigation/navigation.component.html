@@ -1,19 +1,16 @@
 <div class="row">
-    <!-- <div class="col-md-12">   -->
-        <div [ngClass]="navigationMenuStyling">
-            <ul class="nav-menu-items">
-                <a routerLink="/landing-page" routerLinkActive="active"><li>{{ 'navigation.home' | translate }}</li></a>
-                <a routerLink="/designs" routerLinkActive="active"><li>{{ 'navigation.archives' | translate }}</li></a>
-                <a routerLink="/designs" routerLinkActive="active"><li>{{ 'navigation.about' | translate }}</li></a>
-                <a routerLink="/designs" routerLinkActive="active"><li>{{ 'navigation.contact' | translate }}</li></a>
-            </ul>
-        </div>
-        <div class="col-md-12 thin-nav">
-            <img src='../../../assets/images/logo-white.png'>
-            <i class="material-icons icon" *ngIf="!navigationAccordionStatus" (click)="toggleNavigationBar()" [title]="openMenu">menu</i>
-            <i class="material-icons icon" *ngIf="navigationAccordionStatus" (click)="toggleNavigationBar()" [title]="closeMenu">close</i>
-            <i class="material-icons lang-icon" (click)="toggleLanguage()">language</i>
-            <span class="language">{{ currLang }}</span>
-        </div>
-    <!-- </div> -->
+    <div [ngClass]="navigationMenuStyling">
+        <ul class="nav-menu-items">
+            <a routerLink="/landing-page" routerLinkActive="active"><li>{{ 'navigation.home' | translate }}</li></a>
+            <a routerLink="/designs" routerLinkActive="active"><li>{{ 'navigation.about' | translate }}</li></a>
+            <a routerLink="/designs" routerLinkActive="active"><li>{{ 'navigation.contact' | translate }}</li></a>
+        </ul>
+    </div>
+    <div class="col-md-12 thin-nav">
+        <img src='../../../assets/images/logo-white.png'>
+        <i class="material-icons icon" *ngIf="!navigationAccordionStatus" (click)="toggleNavigationBar()" [title]="openMenu">menu</i>
+        <i class="material-icons icon" *ngIf="navigationAccordionStatus" (click)="toggleNavigationBar()" [title]="closeMenu">close</i>
+        <img src="../../../assets/images/turkey-flag.png" class="flag-turkey" (click)="toggleLanguageTo('tr')">
+        <img src="../../../assets/images/england-flag.jpg" class="flag-england" (click)="toggleLanguageTo('en')">
+    </div>
 </div>

@@ -1,7 +1,12 @@
-<app-card></app-card>
-<br>
-<app-card></app-card>
-<br>
-<app-card></app-card>
-<br>
-<app-card></app-card>
+<div class="row">
+    <!-- MUST CONVERT ALL INPUTS INTO GETTERS AND MOVE TO .TS FILE -->
+    <div class="col-md-12">
+        <button (click)="addPost()">Add Design</button>
+        <div class="cards" *ngFor="let card of cards">
+            <app-card [imageURL]="'assets/images/' + card.data.cardImg"
+                [cardTitle]="card.data.cardTitle"
+                [cardTags]="card.data.cardTags"
+            ></app-card>
+        </div>
+    </div>
+</div>
