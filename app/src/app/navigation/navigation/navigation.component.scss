@@ -72,6 +72,12 @@
         margin: auto;
         background-color: $black;
 
+        .lang-icon {
+            float: right;
+            font-size: 12pt;
+            margin: 9px;
+        }
+
         i {
             color: white;
             float: left;
@@ -83,6 +89,11 @@
 
         .language {
             color: white;
+            font-size: 9pt;
+            float: right;
+            font-family: Merriweather;
+            text-decoration: underline;
+            margin-top: 8px;
         }
     }
 }

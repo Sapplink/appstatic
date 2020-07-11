@@ -16,12 +16,14 @@ export class NavigationComponent implements OnInit {
     private translate: TranslateService) { }
 
   ngOnInit(): void {
+    this.setCurrLang();
   }
 
   toggleNavigationBar() {
     if (!this.navigationDisabled) {
       this.stateService.toggleNavigation();
     }
+
   }
 
   toggleLanguage() {
@@ -30,8 +32,12 @@ export class NavigationComponent implements OnInit {
     } else {
       this.stateService.currentApplicationLanguage = 'en';
     }
-    this.currLang = this.stateService.currentApplicationLanguage;
+    this.setCurrLang();
     this.changeLanguage.emit();
+  }
+
+  setCurrLang() {
+    this.currLang = (this.stateService.currentApplicationLanguage === 'en') ? 'TR' : 'EN';
   }
 
   get navigationAccordionStatus(): boolean {
