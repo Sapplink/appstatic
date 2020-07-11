@@ -10,7 +10,10 @@ body {
     width: 100.9%;
     overflow-x: hidden;
 }
-
+span, p, h1, h2 {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
 // Global Button
 
 button {

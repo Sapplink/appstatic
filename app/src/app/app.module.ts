@@ -12,11 +12,11 @@ import { MatDialogModule, MAT_DIALOG_DEFAULT_OPTIONS } from '@angular/material/d
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AboutPageComponent } from './about-page/about-page/about-page.component';
 import { NavigationComponent } from './navigation/navigation/navigation.component';
-import { DesignsPageComponent } from './designs-page/designs-page/designs-page.component';
+import { DesignsPageComponent } from './pages/designs-page/designs-page.component';
 import { CardComponent } from './card/card/card.component';
 import { AddPostComponent } from './add-post/add-post/add-post.component';
 import { ReactiveFormsModule } from '@angular/forms';
-// import { DesignsPageComponent } from './designs-page/designs-page/designs-page.component';
+import { ProjectsPageComponent } from './pages/projects-page/projects-page.component';
 
 
 export function HttpLoaderFactory(http: HttpClient) {
@@ -28,11 +28,11 @@ export function HttpLoaderFactory(http: HttpClient) {
     AppComponent,
     LandingPageComponent,
     AboutPageComponent,
-    // DesignsPageComponent,
     NavigationComponent,
     DesignsPageComponent,
     CardComponent,
-    AddPostComponent
+    AddPostComponent,
+    ProjectsPageComponent
   ],
   imports: [
     BrowserModule,
