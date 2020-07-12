@@ -48,7 +48,7 @@
         "cenkSayin": "- Cenk Sayin, Former President @ T.S.O.C",
         "cenkSayinReference": "\"One can always rely on Marc to complete any task with excellence. His character really is very hard to come by.\"",
         "daniyalAdeel": "- Daniyal Adeel, President @ UTEFA",
-        "daniyalAdeelReference": "\"As the Vice President of UTEFA, Marc took great responsibility in helping run the association. I had trust that along the way, at ony point if I needed anything, I could ask for Marc's assistance, and he would be there. He was also exceptional in running the quantitative team, hosting learning sessions, leading analysts and developers, as well as creating and running a year-long UI / ML fintech project!\""
+        "daniyalAdeelReference": "\"As the Vice President of UTEFA, Marc took great responsibility in helping run the association. I had trust that along the way, at any point if I needed anything, I could ask for Marc's assistance, and he would be there. He was also exceptional in running the quantitative team, hosting learning sessions, leading analysts and developers, as well as creating and running a year-long UI / ML fintech project!\""
     },
     "shared": {
         "founder": "Marc Atasoy",
@@ -57,7 +57,8 @@
         "links": {
             "github": "github.com/marcmerih",
             "instagram": "@marcmerih",
-            "linkedin": "linkedin.com/merihatasoy"
+            "linkedin": "linkedin.com/merihatasoy",
+            "resume": "Marc Atasoy - CV"
         }
     }
 }
