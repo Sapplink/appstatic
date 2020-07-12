@@ -64,7 +64,7 @@
             }
         },
         "userEmail": {
-            "title": "Your email",
+            "title": "Your email address",
             "errors": {
 
             }
@@ -76,11 +76,14 @@
             }
         },
         "emailContent": {
-            "title": "Contents",
+            "title": "Content",
             "errors": {
                 
             }
         }
+    },
+    "footer": {
+        "designedBy": "Designed and developed from A to Y by ꪖ​𝓽​ꪖ​𝘴​ꪮ​ꪗ​"
     },
     "shared": {
         "founder": "Marc Atasoy",
@@ -91,6 +94,7 @@
             "instagram": "@marcmerih",
             "linkedin": "linkedin.com/merihatasoy",
             "resume": "Marc Atasoy - CV"
-        }
+        },
+        "select": "-- Select --"
     }
 }
