@@ -1,7 +1,10 @@
 <div class="row">
     <div class="col-md-12">
+        <span class="title">Get In Touch</span>
+        <br>
         <div class="contact" [formGroup]="formGroup">
             <span>{{ 'contact.contactTypes.title' | translate }}</span>
+            <br>
             <select id="contact-type" name="contact-type" formControlName='contactType'>
                 <option *ngFor="let type of contactTypes"
                 [value]="type" 

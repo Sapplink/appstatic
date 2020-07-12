@@ -7,7 +7,7 @@
         </ul>
     </div>
     <div class="col-md-12 thin-nav">
-        <img src='../../../assets/images/logo-white.png'>
+        <img src='../../../assets/images/logo-white.png' class="logo">
         <i class="material-icons icon" *ngIf="!navigationAccordionStatus" (click)="toggleNavigationBar()" [title]="openMenu">menu</i>
         <i class="material-icons icon" *ngIf="navigationAccordionStatus" (click)="toggleNavigationBar()" [title]="closeMenu">close</i>
         <img src="../../../assets/images/turkey-flag.png" class="flag-turkey" (click)="toggleLanguageTo('tr')">
