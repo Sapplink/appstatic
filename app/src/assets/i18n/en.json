@@ -53,6 +53,11 @@
     "shared": {
         "founder": "Marc Atasoy",
         "en": "EN",
-        "tr": "TR"
+        "tr": "TR",
+        "links": {
+            "github": "github.com/marcmerih",
+            "instagram": "@marcmerih",
+            "linkedin": "linkedin.com/merihatasoy"
+        }
     }
 }
