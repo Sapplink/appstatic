@@ -1,11 +1,27 @@
 .col-md-12 {
+    .title {
+        font-family: Merriweather;
+        font-weight: 300;
+        font-size: 30pt;
+        margin-top: 100px !important;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+        animation-name: titleSmoothIn;
+        animation-duration: 0.35s;
+        animation-timing-function: ease-in;
+        opacity: 0;
+        animation-delay: 0.5s;
+        animation-fill-mode: forwards;
+        margin-left: 30.2%;
+    }
+    
     .reference1 {
-        margin-left: 150px;
+        margin-left: 10%;
         width: 60%;
         margin-top: 130px;
         animation: easeInAppear;
         animation-duration: 0.5s;
-        animation-delay: 0.3s;
+        animation-delay: 0.7s;
         opacity: 0;
         animation-fill-mode: forwards;
         animation-timing-function: ease-in;
@@ -29,13 +45,13 @@
         }
     }
     .reference2 {
-        margin-left: 450px;
+        margin-left: 30%;
         width: 60%;
         margin-top: 130px;
         margin-bottom: 130px;
         animation: easeInAppear;
         animation-duration: 0.5s;
-        animation-delay: 0.3s;
+        animation-delay: 0.7s;
         opacity: 0;
         animation-fill-mode: forwards;
         animation-timing-function: ease-in;

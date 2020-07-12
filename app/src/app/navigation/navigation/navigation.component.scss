@@ -13,6 +13,7 @@
     opacity: 0;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in;
+    margin-left: -0.5%;
     
     img {
         height: 2.5em;
@@ -31,6 +32,7 @@
             font-style: none;
             margin: auto;
             padding: 2px;
+            margin-left: 2%;
             list-style: none;
             pointer-events: pointer;
             height: 5%;
@@ -77,12 +79,17 @@
         height: auto;
         margin: auto;
         background-color: $black;
+        margin-left: -0.2%;
 
         .flag-turkey, .flag-england {
             height: 20px;
             float: right;
             margin-top: 7px;
             padding: 4px;
+        }
+
+        .logo {
+            margin-left: 3%;
         }
         
         i {
