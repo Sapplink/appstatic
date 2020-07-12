@@ -18,4 +18,9 @@ export class ContactService {
       mailContent: ['']
     });
   }
+
+  submitForm() {
+    // http call here
+    return;
+  }
 }

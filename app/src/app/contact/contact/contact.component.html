@@ -1,15 +1,53 @@
 <div class="row">
-    <div class="col-md-12">
+    <div class="col-md-12 contacts-page">
         <span class="title">Get In Touch</span>
         <br>
+        <br>
         <div class="contact" [formGroup]="formGroup">
-            <span>{{ 'contact.contactTypes.title' | translate }}</span>
+            <div>
+                <span>{{ 'contact.contactTypes.title' | translate }}</span>
+                <br>
+                <select id="contact-type" name="contact-type" formControlName='contactType'>
+                    <option value="" disabled selected>{{ 'shared.select' | translate}}</option>
+                    <option *ngFor="let type of contactTypes"
+                    [value]="type"
+                    placeholder="--Select--"
+                    >{{type}}</option>
+                </select>
+            </div>
+            <div *ngIf="shouldDisplayProjectTypes">
+                <br>
+                <span>{{ 'contact.projectTypes.title' | translate }}</span>
+                <br>
+                <select id="project-type" name="project-type" formControlName='projectInquiryType'>
+                    <option value="" disabled selected>{{ 'shared.select' | translate}}</option>
+                    <option *ngFor="let type of projectTypes"
+                    [value]="type"
+                    placeholder="--Select--"
+                    >{{type}}</option>
+                </select>
+            </div>
             <br>
-            <select id="contact-type" name="contact-type" formControlName='contactType'>
-                <option *ngFor="let type of contactTypes"
-                [value]="type" 
-                >{{type}}</option>
-            </select>
+            <div>
+                <span>{{ 'contact.userEmail.title' | translate }}</span>
+                <br>
+                <input type="text" name="user-email" formControlName="userEmail">
+            </div>
+            <br>
+            <div>
+                <span>{{ 'contact.emailSubject.title' | translate }}</span>
+                <br>
+                <input type="text" name="email-subject" formControlName="mailSubject">
+            </div>
+            <br>
+            <div>
+                <span>{{ 'contact.emailContent.title' | translate }}</span>
+                <br>
+                <textarea type="text" name="email-content" formControlName="mailContent" class="content">Enter</textarea>
+            </div>
+            <br>
+            <button type="submit" (click)="submitForm()">Submit</button>
+            <br>
         </div>
     </div>
 </div>
