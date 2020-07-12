@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { FormGroup, FormBuilder } from '@angular/forms';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 
 const fb = new FormBuilder();
 
@@ -11,11 +11,11 @@ export class ContactService {
 
   constructor() {
     this.form = fb.group({
-      contactType: [''],
-      projectInquiryType: [''],
-      userEmail: [''],
-      mailSubject: [''],
-      mailContent: ['']
+      contactType: ['', [Validators.required]],
+      projectInquiryType: ['',  [Validators.required]],
+      userEmail: ['', [Validators.required]],
+      mailSubject: ['', [Validators.required]],
+      mailContent: ['', [Validators.required]]
     });
   }
 

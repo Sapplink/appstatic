@@ -29,16 +29,17 @@ export class ContactComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    console.log(this.formGroup);
+    
   }
   submitForm() {
-    console.log(this.formGroup);
     if (this.formGroup.get('contactType').value && 
       this.formGroup.get('projectInquiryType').value &&
       this.formGroup.get('contactType').value !== 'Project Inquiry') {
         this.formGroup.get('projectInquiryType').setValue('');
     }
-    this.contactService.submitForm();
+    if (this.formGroup.valid) {
+      this.contactService.submitForm();
+    }
   }
 
   get shouldDisplayProjectTypes() {

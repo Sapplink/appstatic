@@ -26,12 +26,15 @@ export class AddPostComponent implements OnInit {
   }
 
   createCard() {
-    const card: Card = new Card;
-    card.cardTitle = this.formGroup.get('cardTitle').value;
-    card.cardTags = this.formGroup.get('cardTags').value;
-    card.cardImg = (this.formGroup.get('cardImg').value).name;
-    this.formGroup.reset();
-    this.dialogRef.close({data: card});
+    
+    if (this.formGroup.valid) {
+      const card: Card = new Card;
+      card.cardTitle = this.formGroup.get('cardTitle').value;
+      card.cardTags = this.formGroup.get('cardTags').value;
+      card.cardImg = (this.formGroup.get('cardImg').value).name;
+      this.formGroup.reset();
+      this.dialogRef.close({data: card});
+    }
   }
 
   get cardTitle() {
