@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ContactService } from '../contact.service';
 import { FormGroup } from '@angular/forms';
 import { Subscription } from 'rxjs';
+import { StateService } from 'src/app/state.service';
 
 @Component({
   selector: 'app-contact',
@@ -14,7 +15,7 @@ export class ContactComponent implements OnInit {
   formGroup: FormGroup;
   formSubscriptions: Subscription;
 
-  constructor(private contactService: ContactService) {
+  constructor(private contactService: ContactService, private stateService: StateService) {
     this.formGroup = this.contactService.form;
     this.contactTypes = [
       'Project Inquiry',
@@ -29,16 +30,15 @@ export class ContactComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    console.log(this.formGroup);
+    
   }
   submitForm() {
-    console.log(this.formGroup);
     if (this.formGroup.get('contactType').value && 
       this.formGroup.get('projectInquiryType').value &&
       this.formGroup.get('contactType').value !== 'Project Inquiry') {
         this.formGroup.get('projectInquiryType').setValue('');
     }
-    this.contactService.submitForm();
+      this.contactService.submitForm();
   }
 
   get shouldDisplayProjectTypes() {

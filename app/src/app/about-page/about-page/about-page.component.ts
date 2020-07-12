@@ -1,5 +1,6 @@
-import { Component, OnInit, EventEmitter } from '@angular/core';
+import { Component, OnInit, EventEmitter, AfterContentChecked } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
+import { StateService } from 'src/app/state.service';
 
 @Component({
   selector: 'app-about-page',
@@ -9,7 +10,7 @@ import { TranslateService } from '@ngx-translate/core';
 export class AboutPageComponent implements OnInit {
   closeDialog = new EventEmitter();
 
-  constructor(public translate: TranslateService) { }
+  constructor(public translate: TranslateService, private stateService: StateService) { }
 
   ngOnInit(): void {
   }

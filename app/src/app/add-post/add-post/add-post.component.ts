@@ -3,6 +3,7 @@ import { FormGroup, FormControl } from '@angular/forms';
 import { AddPostService } from '../add-post.service';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { Card } from 'src/app/card/card/card.model';
+import { StateService } from 'src/app/state.service';
 
 @Component({
   selector: 'app-add-post',
@@ -13,7 +14,7 @@ export class AddPostComponent implements OnInit {
   formGroup: FormGroup;
   file: File;
   constructor(private addPost: AddPostService, private dialogRef: MatDialogRef<AddPostComponent>,
-    @Inject(MAT_DIALOG_DATA) public data: Card) {
+    @Inject(MAT_DIALOG_DATA) public data: Card, private stateService: StateService) {
   }
 
   ngOnInit(): void {
@@ -26,12 +27,15 @@ export class AddPostComponent implements OnInit {
   }
 
   createCard() {
-    const card: Card = new Card;
-    card.cardTitle = this.formGroup.get('cardTitle').value;
-    card.cardTags = this.formGroup.get('cardTags').value;
-    card.cardImg = (this.formGroup.get('cardImg').value).name;
-    this.formGroup.reset();
-    this.dialogRef.close({data: card});
+    this.stateService.markFormAsDirty(this.formGroup, false);
+    if (this.formGroup.valid) {
+      const card: Card = new Card;
+      card.cardTitle = this.formGroup.get('cardTitle').value;
+      card.cardTags = this.formGroup.get('cardTags').value;
+      card.cardImg = (this.formGroup.get('cardImg').value).name;
+      this.formGroup.reset();
+      this.dialogRef.close({data: card});
+    }
   }
 
   get cardTitle() {
