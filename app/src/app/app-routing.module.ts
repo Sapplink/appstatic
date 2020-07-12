@@ -4,6 +4,7 @@ import { LandingPageComponent } from './landing-page/landing-page/landing-page.c
 import { DesignsPageComponent } from './pages/designs-page/designs-page.component';
 import { ProjectsPageComponent } from './pages/projects-page/projects-page.component';
 import { ReferencesComponent } from './references/references/references.component';
+import { ContactComponent } from './contact/contact/contact.component';
 
 
 const routes: Routes = [
@@ -22,6 +23,10 @@ const routes: Routes = [
   {
     path: 'references',
     component: ReferencesComponent
+  },
+  {
+    path: 'contact',
+    component: ContactComponent
   }
 ];
 

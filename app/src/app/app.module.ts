@@ -18,6 +18,8 @@ import { AddPostComponent } from './add-post/add-post/add-post.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ProjectsPageComponent } from './pages/projects-page/projects-page.component';
 import { ReferencesComponent } from './references/references/references.component';
+import { ContactComponent } from './contact/contact/contact.component';
+import { FooterComponent } from './navigation/footer/footer/footer.component';
 
 
 export function HttpLoaderFactory(http: HttpClient) {
@@ -34,7 +36,9 @@ export function HttpLoaderFactory(http: HttpClient) {
     CardComponent,
     AddPostComponent,
     ProjectsPageComponent,
-    ReferencesComponent
+    ReferencesComponent,
+    ContactComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
