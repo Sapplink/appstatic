@@ -28,12 +28,20 @@ export class StateService {
     return this.router.url;
   }
 
-  MarkFormDirty(form: FormGroup | FormArray) {
-    if (form.invalid) { 
-      Object.keys(form.controls).forEach(key => {
-        form.controls[key].markAsDirty();
-      });
-      return;
-    }
+  markFormAsDirty(form: FormGroup | FormArray, updateValue: boolean) {
+    Object.keys(form.controls).forEach(field => {
+      const control = form.get(field) as FormGroup;
+      if (control) {
+        if (control.controls) {
+          this.markFormAsDirty(control, updateValue);
+        } else {
+          control.markAsTouched({onlySelf: false});
+          control.markAsDirty({onlySelf: false});
+        }
+        if (updateValue) {
+          control.updateValueAndValidity();
+        }
+      }
+    })
   }
 }
