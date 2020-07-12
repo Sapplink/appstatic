@@ -50,6 +50,38 @@
         "about1": "Istanbul'da dogan Kanada'li Marc Atasoy, University of Toronto da muhendislik okumaktadir. Endustri Muhendisliginde uzmanligini Yoneylem Arastirmasinda yapmaktadir, ve ikincil olarak Yapay Zeka ve Machine Learning okurken, ayni zamanda da Muhendislik Ticaret Sertifikasi almistir. Endustri Muhendisliginde BASc.",
         "about2": "6 yildir HTML5/CSS ile, 5 yildir Python ve Java ile, 4 yildir SQL ile, ve de 2 yildir Yapay Zeka ile calisan Marc Merih, ayni zamanda profesyonel olarak ile 1.5 yildir Angular / HTML / CSS ile calismisligi vardir. Ilgi alani sistem mimarisi tasarımında optimizasyon, ve iOS uygulamalari ve tasarimlari gelistirmektir."
     },
+    "contact": {
+        "contactTypes": {
+            "title": "Reason for contact",
+            "errors": {
+
+            }
+        },
+        "projectTypes": {
+            "title": "Type of project",
+            "errors": {
+
+            }
+        },
+        "userEmail": {
+            "title": "Your email",
+            "errors": {
+
+            }
+        },
+        "emailSubject": {
+            "title": "Subject",
+            "errors": {
+
+            }
+        },
+        "emailContent": {
+            "title": "Contents",
+            "errors": {
+                
+            }
+        }
+    },
     "shared": {
         "founder": "Marc Atasoy",
         "en": "EN",

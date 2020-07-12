@@ -50,6 +50,38 @@
         "daniyalAdeel": "- Daniyal Adeel, President @ UTEFA",
         "daniyalAdeelReference": "\"As the Vice President of UTEFA, Marc took great responsibility in helping run the association. I had trust that along the way, at any point if I needed anything, I could ask for Marc's assistance, and he would be there. He was also exceptional in running the quantitative team, hosting learning sessions, leading analysts and developers, as well as creating and running a year-long UI / ML fintech project!\""
     },
+    "contact": {
+        "contactTypes": {
+            "title": "Reason for contact",
+            "errors": {
+
+            }
+        },
+        "projectTypes": {
+            "title": "Type of project",
+            "errors": {
+
+            }
+        },
+        "userEmail": {
+            "title": "Your email",
+            "errors": {
+
+            }
+        },
+        "emailSubject": {
+            "title": "Subject",
+            "errors": {
+
+            }
+        },
+        "emailContent": {
+            "title": "Contents",
+            "errors": {
+                
+            }
+        }
+    },
     "shared": {
         "founder": "Marc Atasoy",
         "en": "EN",

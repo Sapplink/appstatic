@@ -1,1 +1,12 @@
-<p>contact works!</p>
+<div class="row">
+    <div class="col-md-12">
+        <div class="contact" [formGroup]="formGroup">
+            <span>{{ 'contact.contactTypes.title' | translate }}</span>
+            <select id="contact-type" name="contact-type" formControlName='contactType'>
+                <option *ngFor="let type of contactTypes"
+                [value]="type" 
+                >{{type}}</option>
+            </select>
+        </div>
+    </div>
+</div>
