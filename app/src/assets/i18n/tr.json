@@ -51,6 +51,14 @@
         "about2": "6 yildir HTML5/CSS ile, 5 yildir Python ve Java ile, 4 yildir SQL ile, ve de 2 yildir Yapay Zeka ile calisan Marc Merih, ayni zamanda profesyonel olarak ile 1.5 yildir Angular / HTML / CSS ile calismisligi vardir. Ilgi alani sistem mimarisi tasarımında optimizasyon, ve iOS uygulamalari ve tasarimlari gelistirmektir."
     },
     "shared": {
-        "founder": "Marc Atasoy"
+        "founder": "Marc Atasoy",
+        "en": "EN",
+        "tr": "TR",
+        "links": {
+            "github": "github.com/marcmerih",
+            "instagram": "@marcmerih",
+            "linkedin": "linkedin.com/merihatasoy",
+            "resume": "Marc Atasoy - CV"
+        }
     }
 }

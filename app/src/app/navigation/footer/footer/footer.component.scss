@@ -1,0 +1,18 @@
+@import '../../../../styles.scss';
+
+.footer {
+    height: 4em;
+    background-color: $black;
+    margin: auto;
+
+    .designedBy, .copyright {
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+
+    span, i {
+        color: $white;
+        font-size: 7pt;
+        // text-align: justify;
+    }
+}
