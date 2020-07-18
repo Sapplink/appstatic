@@ -12,7 +12,7 @@
             "companyMotto": "Tasarla. Yarat. Yenile | Toronto, Istanbul",
             "sapplinkSolutions": "Sapplink Solutions",
             "projectsDescriptionPartOne": "Toronto'da 2017'de ",
-            "projectsDescriptionPartTwo": " tarafindan kurulmustur. Sapplink'in misyonu yarattigi uygulamalari tamamiyle ev-icinde uretmektir. Grafik UX/UI tasarim, sistem mimari planlamasi, veri akisi organizasyonu, ve iOS/web uygulamalarinin gelismesinde ustunluk kurmustur. Sapplink hem kendi projeleri ustunde calisip, hemde serbest bir danisman olarak musteri tarafindan kiralanilabilir.",
+            "projectsDescriptionPartTwo": " tarafindan kurulmustur. Sapplink'in misyonu tasarladigi uygulamalari A dan Z ye gelistirmektir. Grafik UX/UI tasarim, sistem mimari planlamasi, veri akisi organizasyonu, ve iOS/web uygulamalarinin gelismesine odaklanmistir. Sapplink, simdilik kendi kisisel proje portfoyunu ihtiva etmektedir, fakat projelerini ileride harici istemcilere genişletmeyi planlıyor.",
             "buttons": {
                 "projectsButton": "Projeler",
                 "designsButton": "Tasarimlar",
@@ -47,43 +47,43 @@
     },
     "aboutPage": {
         "age": "22",
-        "about1": "Istanbul'da dogan Kanada'li Marc Atasoy, University of Toronto da muhendislik okumaktadir. Endustri Muhendisliginde uzmanligini Yoneylem Arastirmasinda yapmaktadir, ve ikincil olarak Yapay Zeka ve Machine Learning okurken, ayni zamanda da Muhendislik Ticaret Sertifikasi almistir. Endustri Muhendisliginde BASc.",
+        "about1": "Istanbul'da dogan Kanada'li Marc Atasoy, University of Toronto da muhendislik okumaktadir. Endustri Muhendisliginde uzmanligini Yoneylem Arastirmasinda yapmaktadir, ve ikincil olarak Yapay Zeka okurken, ayni zamanda da Muhendislik Ticaret Sertifikasi elde etmistir.",
         "about2": "6 yildir HTML5/CSS ile, 5 yildir Python ve Java ile, 4 yildir SQL ile, ve de 2 yildir Yapay Zeka ile calisan Marc Merih, ayni zamanda profesyonel olarak ile 1.5 yildir Angular / HTML / CSS ile calismisligi vardir. Ilgi alani sistem mimarisi tasarımında optimizasyon, ve iOS uygulamalari ve tasarimlari gelistirmektir."
     },
     "contact": {
         "contactTypes": {
-            "title": "Reason for contact",
+            "title": "Iletisim Sebebiniz",
             "errors": {
 
             }
         },
         "projectTypes": {
-            "title": "Type of project",
+            "title": "Proje Türü",
             "errors": {
 
             }
         },
         "userEmail": {
-            "title": "Your email address",
+            "title": "Email adresiniz",
             "errors": {
 
             }
         },
         "emailSubject": {
-            "title": "Subject",
+            "title": "Konu",
             "errors": {
 
             }
         },
         "emailContent": {
-            "title": "Content",
+            "title": "Icerik",
             "errors": {
                 
             }
         }
     },
     "footer": {
-        "designedBy": "Designed and developed from A to Y by ꪖ​𝓽​ꪖ​𝘴​ꪮ​ꪗ​"
+        "designedBy": "Tasarim ve uretim, A dan Y ye: ꪖ​𝓽​ꪖ​𝘴​ꪮ​ꪗ​"
     },
     "shared": {
         "founder": "Marc Atasoy",
