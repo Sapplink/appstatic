@@ -10,22 +10,34 @@ import { VariableService } from 'src/app/variable.service';
   styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent implements OnInit {
-  contactTypes = [];
-  projectTypes = [];
+  contactTypesEN = [];
+  contactTypesTR = [];
+  projectTypesEN = [];
+  projectTypesTR = [];
   formGroup: FormGroup;
   formSubscriptions: Subscription;
 
   constructor(private contactService: ContactService, private variableService: VariableService) {
     this.formGroup = this.contactService.form;
-    this.contactTypes = [
+    this.contactTypesEN = [
       'Project Inquiry',
       'Networking',
       'Contracting',
       'Partnerships'
     ]
-    this.projectTypes = [
+    this.contactTypesTR = [
+      'Proje Talebi',
+      'Sosyal Ağ',
+      'Kontrat',
+      'Ortaklık'
+    ]
+    this.projectTypesEN = [
       'Web Development (UX + Full Stack)',
       'Graphic Design'
+    ]
+    this.projectTypesTR = [
+      'Web Tasarim ve Uygulama (UX + Tam Yığın)',
+      'Grafik Tasarım'
     ]
   }
 
