@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ContactService } from '../contact.service';
 import { FormGroup } from '@angular/forms';
 import { Subscription } from 'rxjs';
-import { StateService } from 'src/app/state.service';
+import { VariableService } from 'src/app/variable.service';
 
 @Component({
   selector: 'app-contact',
@@ -15,7 +15,7 @@ export class ContactComponent implements OnInit {
   formGroup: FormGroup;
   formSubscriptions: Subscription;
 
-  constructor(private contactService: ContactService, private stateService: StateService) {
+  constructor(private contactService: ContactService, private variableService: VariableService) {
     this.formGroup = this.contactService.form;
     this.contactTypes = [
       'Project Inquiry',

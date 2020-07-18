@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
-import { StateService } from '../state.service';
+import { VariableService } from '../variable.service';
 
 @Injectable({
   providedIn: 'root'
@@ -8,7 +8,7 @@ import { StateService } from '../state.service';
 export class ContactService {
   form: FormGroup;
 
-  constructor(private stateService: StateService) {
+  constructor(private variableService: VariableService) {
     const fb = new FormBuilder();    
     this.form = fb.group({
       contactType: ['', Validators.required],
@@ -23,7 +23,7 @@ export class ContactService {
     // http call here
     console.log(this.form);
     if (!this.form.valid) {
-      this.stateService.markFormAsDirty(this.form, false);
+      this.variableService.markFormAsDirty(this.form, false);
     }
     return;
   }

@@ -20,6 +20,7 @@ import { ProjectsPageComponent } from './pages/projects-page/projects-page.compo
 import { ReferencesComponent } from './references/references/references.component';
 import { ContactComponent } from './contact/contact/contact.component';
 import { FooterComponent } from './navigation/footer/footer/footer.component';
+import { LanguageChangePopupComponent } from './language-change-popup/language-change-popup.component';
 
 
 export function HttpLoaderFactory(http: HttpClient) {
@@ -38,7 +39,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     ProjectsPageComponent,
     ReferencesComponent,
     ContactComponent,
-    FooterComponent
+    FooterComponent,
+    LanguageChangePopupComponent
   ],
   imports: [
     BrowserModule,

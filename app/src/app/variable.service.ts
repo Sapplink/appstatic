@@ -5,7 +5,7 @@ import { FormArray, FormGroup } from '@angular/forms';
 @Injectable({
   providedIn: 'root'
 })
-export class StateService {
+export class VariableService {
   navigationAccordionOpen = false;
   navigationClickable = true;
   currentApplicationLanguage = 'en';
