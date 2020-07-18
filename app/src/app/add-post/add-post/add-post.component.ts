@@ -3,7 +3,7 @@ import { FormGroup, FormControl } from '@angular/forms';
 import { AddPostService } from '../add-post.service';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { Card } from 'src/app/card/card/card.model';
-import { StateService } from 'src/app/state.service';
+import { StateService } from 'src/app/variable.service';
 
 @Component({
   selector: 'app-add-post',

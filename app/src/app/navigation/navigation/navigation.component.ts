@@ -1,5 +1,5 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
-import { StateService } from 'src/app/state.service';
+import { StateService } from 'src/app/variable.service';
 import { TranslateService } from '@ngx-translate/core';
 
 @Component({

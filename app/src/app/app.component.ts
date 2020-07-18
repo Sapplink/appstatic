@@ -3,7 +3,7 @@ import { TranslateService } from '@ngx-translate/core';
 import { Routes } from '../app/app.model'
 import { LandingPageComponent } from './landing-page/landing-page/landing-page.component';
 import { Router } from '@angular/router';
-import { StateService } from './state.service';
+import { StateService } from './variable.service';
 
 @Component({
   selector: 'app-root',

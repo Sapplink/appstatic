@@ -1,6 +1,6 @@
 import { Component, OnInit, EventEmitter, AfterContentChecked } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
-import { StateService } from 'src/app/state.service';
+import { StateService } from 'src/app/variable.service';
 
 @Component({
   selector: 'app-about-page',

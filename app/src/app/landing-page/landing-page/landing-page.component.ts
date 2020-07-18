@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { MatDialog } from '@angular/material/dialog';
 import { AboutPageComponent } from '../../about-page/about-page/about-page.component';
-import { StateService } from 'src/app/state.service';
+import { StateService } from 'src/app/variable.service';
 
 @Component({
   selector: 'app-landing-page',

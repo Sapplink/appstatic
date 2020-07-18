@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ContactService } from '../contact.service';
 import { FormGroup } from '@angular/forms';
 import { Subscription } from 'rxjs';
-import { StateService } from 'src/app/state.service';
+import { StateService } from 'src/app/variable.service';
 
 @Component({
   selector: 'app-contact',
