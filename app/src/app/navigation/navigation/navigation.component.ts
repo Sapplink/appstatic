@@ -1,5 +1,5 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
-import { StateService } from 'src/app/state.service';
+import { VariableService } from 'src/app/variable.service';
 import { TranslateService } from '@ngx-translate/core';
 
 @Component({
@@ -11,7 +11,7 @@ export class NavigationComponent implements OnInit {
 
   @Output() changeLanguage = new EventEmitter();
 
-  constructor(private stateService: StateService,
+  constructor(private variableService: VariableService,
     private translate: TranslateService) { }
 
   ngOnInit(): void {
@@ -19,21 +19,21 @@ export class NavigationComponent implements OnInit {
 
   toggleNavigationBar() {
     if (!this.navigationDisabled) {
-      this.stateService.toggleNavigation();
+      this.variableService.toggleNavigation();
     }
   }
 
   toggleLanguageTo(lang: string) {
-    this.stateService.currentApplicationLanguage = lang;
+    this.variableService.currentApplicationLanguage = lang;
     this.changeLanguage.emit();
   }
 
   get navigationAccordionStatus(): boolean {
-    return this.stateService.navigationAccordionOpen;
+    return this.variableService.navigationAccordionOpen;
   }
 
   get navigationDisabled(): boolean {
-    return (this.stateService.navigationClickable === false);
+    return (this.variableService.navigationClickable === false);
   }
 
   get navigationMenuStyling() {

@@ -3,7 +3,7 @@ import { TranslateService } from '@ngx-translate/core';
 import { Routes } from '../app/app.model'
 import { LandingPageComponent } from './landing-page/landing-page/landing-page.component';
 import { Router } from '@angular/router';
-import { StateService } from './state.service';
+import { VariableService } from './variable.service';
 
 @Component({
   selector: 'app-root',
@@ -16,7 +16,7 @@ export class AppComponent implements OnInit {
     component: 'LandingPageComponent'
   }
   
-  constructor(public translate: TranslateService, public router: Router, public stateService: StateService) {
+  constructor(public translate: TranslateService, public router: Router, public variableService: VariableService) {
   }
 
   ngOnInit() {
@@ -29,11 +29,11 @@ export class AppComponent implements OnInit {
     this.translate.addLangs(['en', 'tr']);
     this.translate.setDefaultLang('en');
     this.translate.use('en');
-    this.stateService.currentApplicationLanguage = 'en';
+    this.variableService.currentApplicationLanguage = 'en';
   }
 
   toggleLanguage() {
-    this.translate.use(this.stateService.currentApplicationLanguage);
+    this.translate.use(this.variableService.currentApplicationLanguage);
   }
 
   navigateTo(url: Routes): void {
