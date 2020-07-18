@@ -1,6 +1,8 @@
-import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 import { VariableService } from 'src/app/variable.service';
 import { TranslateService } from '@ngx-translate/core';
+import { MatDialog } from '@angular/material/dialog';
+import { LanguageChangePopupComponent } from 'src/app/language-change-popup/language-change-popup.component';
 
 @Component({
   selector: 'app-navigation',
@@ -8,10 +10,10 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrls: ['./navigation.component.scss']
 })
 export class NavigationComponent implements OnInit {
-
   @Output() changeLanguage = new EventEmitter();
 
   constructor(private variableService: VariableService,
+    public dialog: MatDialog,
     private translate: TranslateService) { }
 
   ngOnInit(): void {
@@ -24,8 +26,22 @@ export class NavigationComponent implements OnInit {
   }
 
   toggleLanguageTo(lang: string) {
-    this.variableService.currentApplicationLanguage = lang;
-    this.changeLanguage.emit();
+    if (this.variableService.currentApplicationLanguage !== lang) {
+      let dialogRef = this.dialog.open(LanguageChangePopupComponent, {
+        autoFocus: true,
+        height: '36vh',
+        width: '45vw',
+        disableClose: false,
+        data: lang
+      });
+      const cancelSubscription = dialogRef.componentInstance.closeDialog.subscribe(() => {
+        dialogRef.close();
+      });
+      const changeLanguage = dialogRef.componentInstance.changeLanguage.subscribe(() => {
+        this.changeLanguage.emit();
+        dialogRef.close();
+      });
+    }
   }
 
   get navigationAccordionStatus(): boolean {

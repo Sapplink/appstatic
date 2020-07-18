@@ -1,4 +1,4 @@
-import { Component, OnInit, EventEmitter, AfterContentChecked } from '@angular/core';
+import { Component, OnInit, EventEmitter } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { VariableService } from 'src/app/variable.service';
 
