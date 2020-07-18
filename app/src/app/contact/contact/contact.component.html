@@ -1,6 +1,6 @@
 <div class="row">
     <div class="col-md-12 contacts-page">
-        <span class="title">Get In Touch</span>
+        <span class="title">{{ 'contact.title' | translate }}</span>
         <br>
         <br>
         <div class="contact" [formGroup]="formGroup">
@@ -9,7 +9,7 @@
                 <br>
                 <select id="contact-type" name="contact-type" formControlName='contactType'>
                     <option value="" disabled selected>{{ 'shared.select' | translate}}</option>
-                    <option *ngFor="let type of contactTypes"
+                    <option *ngFor="let type of contactTypesEN"
                     [value]="type"
                     placeholder="--Select--"
                     >{{type}}</option>
@@ -21,7 +21,7 @@
                 <br>
                 <select id="project-type" name="project-type" formControlName='projectInquiryType'>
                     <option value="" disabled selected>{{ 'shared.select' | translate}}</option>
-                    <option *ngFor="let type of projectTypes"
+                    <option *ngFor="let type of projectTypesEN"
                     [value]="type"
                     placeholder="--Select--"
                     >{{type}}</option>
