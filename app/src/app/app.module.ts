@@ -15,12 +15,13 @@ import { NavigationComponent } from './navigation/navigation/navigation.componen
 import { DesignsPageComponent } from './pages/designs-page/designs-page.component';
 import { CardComponent } from './card/card/card.component';
 import { AddPostComponent } from './add-post/add-post/add-post.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { ProjectsPageComponent } from './pages/projects-page/projects-page.component';
 import { ReferencesComponent } from './references/references/references.component';
 import { ContactComponent } from './contact/contact/contact.component';
 import { FooterComponent } from './navigation/footer/footer/footer.component';
 import { LanguageChangePopupComponent } from './language-change-popup/language-change-popup.component';
+import { ContactService } from './contact/contact.service';
 
 
 export function HttpLoaderFactory(http: HttpClient) {
@@ -48,6 +49,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     HttpClientModule,
     MatDialogModule,
     ReactiveFormsModule,
+    FormsModule,
     BrowserAnimationsModule,
     TranslateModule.forRoot({
       loader: {
@@ -59,7 +61,8 @@ export function HttpLoaderFactory(http: HttpClient) {
   ],
   entryComponents: [AboutPageComponent],
   providers: [
-    {provide: MAT_DIALOG_DEFAULT_OPTIONS, useValue: {hasBackdrop: false}}
+    {provide: MAT_DIALOG_DEFAULT_OPTIONS, useValue: {hasBackdrop: false}},
+    ContactService
   ],
   bootstrap: [AppComponent]
 })

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ContactService } from '../contact.service';
-import { FormGroup } from '@angular/forms';
+import { FormGroup, FormControl, Validators, FormBuilder } from '@angular/forms';
 import { Subscription } from 'rxjs';
 import { VariableService } from 'src/app/variable.service';
 
@@ -18,7 +18,7 @@ export class ContactComponent implements OnInit {
   formSubscriptions: Subscription;
 
   constructor(private contactService: ContactService, private variableService: VariableService) {
-    this.formGroup = this.contactService.form;
+    this.formGroup = this.contactService.FormData as FormGroup;
     this.contactTypesEN = [
       'Project Inquiry',
       'Networking',
@@ -42,20 +42,32 @@ export class ContactComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    
   }
+
   submitForm() {
     if (this.formGroup.get('contactType').value && 
       this.formGroup.get('projectInquiryType').value &&
       this.formGroup.get('contactType').value !== 'Project Inquiry') {
         this.formGroup.get('projectInquiryType').setValue('');
     }
-      this.contactService.submitForm();
+    this.contactService.submitForm(this.formGroup).subscribe(response => {
+      location.href = 'https://mailthis.to/confirm'
+      console.log(response);
+      }, 
+      error => {
+        console.warn(error.responseText);
+        console.log({ error });
+      }
+    );
   }
 
   get shouldDisplayProjectTypes() {
     if (this.formGroup.get('contactType').value) {
       return (this.formGroup.get('contactType').value === 'Project Inquiry');
     }
+  }
+
+  get isAlphaRelease() {
+    return this.contactService.isAlphaRelease;
   }
 }

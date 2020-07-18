@@ -9,8 +9,11 @@ export class VariableService {
   navigationAccordionOpen = false;
   navigationClickable = true;
   currentApplicationLanguage = 'en';
+  release: string;
 
-  constructor(private router: Router) { }
+  constructor(private router: Router) { 
+    this.release = 'alpha'
+  }
     
   toggleNavigation(): void {
     this.navigationAccordionOpen = !this.navigationAccordionOpen;
