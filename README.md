@@ -8,7 +8,7 @@ Created with NodeJS:
 
 UI - Typescript (Angular 9), HTML, (S)CSS
   
-RL - ExpressJS
+RL - NodeJS & Express
   
 DB - MongoDB
 
