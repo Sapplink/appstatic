@@ -22,6 +22,7 @@ import { ContactComponent } from './contact/contact/contact.component';
 import { FooterComponent } from './navigation/footer/footer/footer.component';
 import { LanguageChangePopupComponent } from './language-change-popup/language-change-popup.component';
 import { ContactService } from './contact/contact.service';
+import { CardInfoComponent } from './pages/card-info/card-info.component';
 
 
 export function HttpLoaderFactory(http: HttpClient) {
@@ -41,7 +42,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     ReferencesComponent,
     ContactComponent,
     FooterComponent,
-    LanguageChangePopupComponent
+    LanguageChangePopupComponent,
+    CardInfoComponent
   ],
   imports: [
     BrowserModule,

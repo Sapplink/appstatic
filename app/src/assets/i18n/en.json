@@ -12,7 +12,7 @@
             "companyMotto": "Design. Develop. Innovate | Toronto, Istanbul",
             "sapplinkSolutions": "Sapplink Solutions",
             "projectsDescriptionPartOne": "Founded in Toronto in 2017 by",
-            "projectsDescriptionPartTwo": ", Sapplink's primary mission is to design and develop applications from start to finish. Focused on graphical and UX/UI design, system architecture planning, data flow organization, and app/web development, Sapplink is currently a stand-alone freelancer creating and developing its own projects, but plans on expanding to external clients.",
+            "projectsDescriptionPartTwo": ", Sapplink's primary mission is to design and develop applications from start to finish. Focused on graphical and UX/UI design, system architecture planning, data flow organization, and app/web development, Sapplink is currently a stand-alone freelancer creating and developing its own projects. Commercial applications are expected to commence in the fall of 2021.",
             "buttons": {
                 "projectsButton": "Projects",
                 "designsButton": "Designs",
@@ -30,7 +30,11 @@
     "aboutPage": {
         "age": "22",
         "about1": "Born in Istanbul, Marc is a Canadian innovator studying in his fourth year at University of Toronto, acquiring his BASc. in Industrial Engineering, specializing in Operations Research. He also holds an Engineering Business Certificate, and is completing a minor in Artifial Intelligence and Machine Learning.",
-        "about2": "Informally, he has 6 years of experience working with HTML/CSS, 5 years with Python and Java, 4 years with SQL, and 2 years with Machine Learning Python libraries and technologies. Professionally, he has worked with Angular / HTML / CSS for 1.5 years. His interests lie in iOS app development and design, as well as optimization in system architecture design."
+        "about2": "Due to his role in the Robotics club during his high school years, he has now gained 5 years of experience working with Java and Python. As well, he has 6 years of experience working with HTML/CSS due to his personal interests, 4 years with SQL, and lastly, 2 years with Machine Learning Python libraries and technologies. Professionally, he has worked with Angular / HTML / CSS for 1.5 years at Intact Insurance. His interests lie in iOS app development and design, as well as optimization in system architecture design."
+    },
+    "changeLanguage": {
+        "title": "Change website language?",
+        "areYouSure": "Are you sure you want to change the website language to: "
     },
     "designsPage": {
         "title": "Designs",
@@ -38,9 +42,14 @@
     },
     "projectsPage": {
         "title": "Projects",
-        "addProject": "Add New Project"
+        "addProject": "Add New Project",
+        "aps360Content": "",
+        "utefaContent": "",
+        "sapplinkContent": "",
+        "monteCarloContent": ""
     },
     "references": {
+        "title": "Hear What Others Have To Say",
         "rijuVashisht": "- Riju Vashisht, Software Developer @ Capco",
         "rijuVashishtReference": "\"Marc Atasoy is an extremely talented professional with vast skill in Angular and software development. His knowledge and awareness of best development practices might only be surpassed by his communication and team building skills. It was a pleasure to work with and learn from Marc.\"",
         "kannanMuthiah": "- Kannan Muthiah, IT Commercial Lines Manager @ Intact",
@@ -51,6 +60,7 @@
         "daniyalAdeelReference": "\"As the Vice President of UTEFA, Marc took great responsibility in helping run the association. I had trust that along the way, at any point if I needed anything, I could ask for Marc's assistance, and he would be there. He was also exceptional in running the quantitative team, hosting learning sessions, leading analysts and developers, as well as creating and running a year-long UI / ML fintech project!\""
     },
     "contact": {
+        "title": "Get In Touch (Coming Soon)",
         "contactTypes": {
             "title": "Reason for contact",
             "errors": {
@@ -95,6 +105,9 @@
             "linkedin": "linkedin.com/merihatasoy",
             "resume": "Marc Atasoy - CV"
         },
-        "select": "-- Select --"
+        "select": "-- Select --",
+        "yes": "Yes",
+        "no": "No",
+        "comingSoon": "Coming Soon!"
     }
 }

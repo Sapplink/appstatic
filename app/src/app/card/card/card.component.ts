@@ -1,4 +1,7 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, EventEmitter } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { CardInfoComponent } from 'src/app/pages/card-info/card-info.component';
+import { Card } from './card.model';
 
 @Component({
   selector: 'app-card',
@@ -7,11 +10,12 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class CardComponent implements OnInit {
   @Input() imageURL: string;
+  @Input() cardContent: string;
   @Input() cardTitle: string;
   @Input() cardTags: string;
   tags: string[];
 
-  constructor() { }
+  constructor(private dialog: MatDialog) { }
 
   ngOnInit(): void {
     if (this.cardTags && this.cardTags.includes(',')) {
@@ -33,6 +37,25 @@ export class CardComponent implements OnInit {
       const tags = this.tags.slice(0,3);
       return tags;
     }
+  }
+
+  openCardInfo() {
+    const card: Card = {
+      cardContent: this.cardContent,
+      cardTags: this.tags,
+      cardTitle: this.cardTitle,
+      cardImg: this.imageURL
+    };
+
+    let dialogRef = this.dialog.open(CardInfoComponent, {
+      height: '100vh',
+      width: '100vw',
+      disableClose: false,
+      data: card
+    });
+    const subscription = dialogRef.componentInstance.closeDialog.subscribe(() => {
+      dialogRef.close();
+    });
   }
 
 }
