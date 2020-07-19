@@ -3,6 +3,7 @@ import { Card } from 'src/app/card/card/card.model';
 import { MatDialog } from '@angular/material/dialog';
 import { AddPostComponent } from 'src/app/add-post/add-post/add-post.component';
 import { FormGroup } from '@angular/forms';
+import { VariableService } from 'src/app/variable.service';
 
 @Component({
   selector: 'app-designs-page',
@@ -12,7 +13,7 @@ import { FormGroup } from '@angular/forms';
 export class DesignsPageComponent implements OnInit {
   cards: Array<Card> = []; // must be updated when backend is created. this is only intermediary
 
-  constructor(public dialog: MatDialog) { }
+  constructor(public dialog: MatDialog, private variableService: VariableService) { }
 
   ngOnInit(): void {
   }
@@ -29,5 +30,9 @@ export class DesignsPageComponent implements OnInit {
         this.cards.push(data);
       }
     });
+  }
+
+  get inProduction() {
+    return this.variableService.isInProduction;
   }
 }

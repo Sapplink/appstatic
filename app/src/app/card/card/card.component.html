@@ -8,18 +8,17 @@
         <a routerLink="/landing-page" routerLinkActive="active">{{ cardTitle }}</a>
     </div>
     <div class="col-md-12 card-tags">
-        <span>Tags: </span>
-        <br>
-        <div class="tag-holder" *ngIf="shouldDisplayAllTags">
+        <span class="col-md-21 tags-title">Tags: </span>
+        <div class="col-md-12 tag-holder" *ngIf="shouldDisplayAllTags">
             <div *ngFor="let tag of tags; index as i">
                 <span class="tag"> {{ tag }} </span>
             </div>
         </div>
-        <div class="tag-holder" *ngIf="!shouldDisplayAllTags">
+        <!-- <div class="tag-holder" *ngIf="!shouldDisplayAllTags">
             <div *ngFor="let tag of tagsGreaterThanThree(); index as i">
                 <span class="tag"> {{ tag }} </span>
             </div>
             <span>...</span>
-        </div>
+        </div> -->
     </div>
 </div>
