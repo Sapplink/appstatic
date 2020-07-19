@@ -33,6 +33,7 @@ export class AddPostComponent implements OnInit {
       card.cardTitle = this.formGroup.get('cardTitle').value;
       card.cardTags = this.formGroup.get('cardTags').value;
       card.cardImg = (this.formGroup.get('cardImg').value).name;
+      card.cardContent = (this.formGroup.get('cardContent').value);
       this.formGroup.reset();
       this.dialogRef.close({data: card});
     }
@@ -46,5 +47,8 @@ export class AddPostComponent implements OnInit {
   }
   get cardImg() {
     return this.formGroup.get('cardImg');
+  }
+  get cardContent() {
+    return this.formGroup.get('cardContent');
   }
 }

@@ -34,8 +34,10 @@
         margin-right: 10px;
         text-align: left;
 
-        a {
+        a, a label {
             text-decoration: underline;
+            color: blue;
+            cursor: pointer;
         }
     }
 

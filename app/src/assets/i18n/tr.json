@@ -9,13 +9,13 @@
     "landingPage": {
         "contents": {
             "founderHover": "Kurucu hakkinda",
-            "companyMotto": "Tasarla. Yarat. Yenile | Toronto, Istanbul",
+            "companyMotto": "Tasarla. Yarat. Keşfet | Toronto, Istanbul",
             "sapplinkSolutions": "Sapplink Solutions",
             "projectsDescriptionPartOne": "Toronto'da 2017'de ",
-            "projectsDescriptionPartTwo": " tarafindan kurulmustur. Sapplink'in misyonu tasarladigi uygulamalari A dan Z ye gelistirmektir. Grafik UX/UI tasarim, sistem mimari planlamasi, veri akisi organizasyonu, ve iOS/web uygulamalarinin gelismesine odaklanmistir. Sapplink, simdilik kendi kisisel proje portfoyunu ihtiva etmektedir, fakat projelerini ileride harici istemcilere genişletmeyi planlıyor.",
+            "projectsDescriptionPartTwo": " tarafindan kurulmustur. Misyonu grafik ve UX/UI tasarim, sistem mimari planlamasi ve optimizasyonu, veri akışı organizasyonu, ve iOS/web uygulamalarini geliştirmektir. Sapplink, şimdilik kendi kişisel proje portföyünü ihtiva etmektedir. Ticari uygulamalar, 2021 Sonbaharında başlıyacaktır.",
             "buttons": {
                 "projectsButton": "Projeler",
-                "designsButton": "Tasarimlar",
+                "designsButton": "Tasarımlar",
                 "projectsButtonHover": "Teknikleri gormek istiyorum!",
                 "designsButtonHover": "Kendimi yaratici hisediyorum!"
             }
@@ -33,9 +33,14 @@
     },
     "projectsPage": {
         "title": "Projeler",
-        "addProject": "Yeni Proje Ekle"
+        "addProject": "Yeni Proje Ekle",
+        "aps360Content": "",
+        "utefaContent": "",
+        "sapplinkContent": "",
+        "monteCarloContent": ""
     },
     "references": {
+        "title": "Başkalarının Gözüyle",
         "rijuVashisht": "- Riju Vashisht, Software Developer @ Capco",
         "rijuVashishtReference": "\"Marc Atasoy is an extremely talented professional with vast skill in Angular and software development. His knowledge and awareness of best development practices might only be surpassed by his communication and team building skills. It was a pleasure to work with and learn from Marc.\"",
         "kannanMuthiah": "- Kannan Muthiah, IT Commercial Lines Manager @ Intact",
@@ -47,12 +52,17 @@
     },
     "aboutPage": {
         "age": "22",
-        "about1": "Istanbul'da dogan Kanada'li Marc Atasoy, University of Toronto da muhendislik okumaktadir. Endustri Muhendisliginde uzmanligini Yoneylem Arastirmasinda yapmaktadir, ve ikincil olarak Yapay Zeka okurken, ayni zamanda da Muhendislik Ticaret Sertifikasi elde etmistir.",
-        "about2": "6 yildir HTML5/CSS ile, 5 yildir Python ve Java ile, 4 yildir SQL ile, ve de 2 yildir Yapay Zeka ile calisan Marc Merih, ayni zamanda profesyonel olarak ile 1.5 yildir Angular / HTML / CSS ile calismisligi vardir. Ilgi alani sistem mimarisi tasarımında optimizasyon, ve iOS uygulamalari ve tasarimlari gelistirmektir."
+        "about1": "University of Toronto da muhendislik okumaktadir. Endustri Muhendisliğinde uzmanlığınını Yoneylem Arastirmasinda yapmaktadır, ve ikincil olarak Yapay Zeka okurken, aynı zamanda da Muhendislik Ticaret Sertifikası elde etmistir.",
+        "about2": "Lise yıllarında Robotics kulübündeki gorevi nedeni ile başladığı Python ve Java uygulamalarıyla 5 yıllık bir tecrübe kazanmıştır. Aynı yıllarda, özel ilgisi nedeniyle basladığı HTML vs CSS ile 6 yıllık tecrübesi; kurs niteliğinde öğrendiği SQL ile 4 yıllık tecrübesi; ve yapay zeka metodolojileri ile 2 yıllık tecrübesi vardır. İş hayatında ise, Intact Insurance firmasında Angular (NodeJS), HTML, ve CSS ile 1.5 yıllık profesyönel tecrübe kazanmıştır. İlgi alanları arasında, iOS uygulamalari ve tasarımı ile, sistem muhendisliği ve optimizasyonu yer almaktadır."
+    },
+    "changeLanguage": {
+        "title": "Dil'i Degistir?",
+        "areYouSure": "Dil'i degistirmekten emin misiniz: "
     },
     "contact": {
+        "title": "İletişim (Yakında Sizlerle)",
         "contactTypes": {
-            "title": "Iletisim Sebebiniz",
+            "title": "İletişim Sebebiniz",
             "errors": {
 
             }
@@ -76,7 +86,7 @@
             }
         },
         "emailContent": {
-            "title": "Icerik",
+            "title": "İcerik",
             "errors": {
                 
             }
@@ -95,6 +105,9 @@
             "linkedin": "linkedin.com/merihatasoy",
             "resume": "Marc Atasoy - CV"
         },
-        "select": "-- Select --"
+        "select": "-- Seçiniz --",
+        "yes": "Evet",
+        "no": "Hayir",
+        "comingSoon": "Yakında Sizlerle"
     }
 }

@@ -1,0 +1,17 @@
+<div class="row">
+    <div class="col-md-12">
+        <i class="material-icons back-button" (click)="closeDialog.emit()">keyboard_backspace</i>
+    </div>
+    <div *ngIf="data" class="col-md-12 information">
+        <div class="col-md-12">
+            <span class="col-md-12 title">{{ data.cardTitle }}</span>
+            <br>
+            <span class="date">{{ myDate | date: 'shortDate' }}</span>
+        </div>
+        <div class="col-md-12 content">
+            <span class="content">
+                {{ data.cardContent }}
+            </span>
+        </div>
+    </div>
+</div>
