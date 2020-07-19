@@ -1,0 +1,23 @@
+i {
+    cursor: pointer;
+}
+.information {
+    margin: auto;
+    text-align: center;
+    .title {
+        font-size: 15pt;
+        font-family: Merriweather;
+        margin: auto;
+        text-align: center;
+    }
+
+    .date {
+        font-size: 9pt;
+        font-family: Playfair Display;
+    }
+}
+
+.content {
+    text-align: center;
+    margin: auto;
+}

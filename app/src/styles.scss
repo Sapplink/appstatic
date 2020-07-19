@@ -30,11 +30,25 @@ button {
     transition: background-color, color 0.3s ease-in-out;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
+
+    &:hover {
+        background-color: $white;
+        color: $black;
+    }
+
+    &:disabled {
+        background-color: $white;
+        color: black;
+    }
+
+    &:disabled:hover {
+        background-color: $white;
+    }
 }
 
-button:hover {
-    background-color: $white;
-    color: $black;
+textarea:disabled {
+    background-color: white;
+    border-color: gray;
 }
 
 // Global small text
