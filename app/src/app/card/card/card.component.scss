@@ -27,11 +27,12 @@
     .card-title {
         font-family: Playfair Display;
         font-weight: 400;
-        font-size: 13pt;
+        font-size: 11pt;
         line-height: 30px;
         text-rendering: optimizeLegibility;
         -webkit-font-smoothing: antialiased;
         margin-right: 10px;
+        text-align: left;
 
         a {
             text-decoration: underline;
@@ -48,9 +49,21 @@
         display: inline;
         white-space: nowrap;
         color: $white;
+        text-align: center;
+        display: inline-flex;
+        float: left;
+
+        .tags-title {
+            color: black;
+            float: left;
+            margin-left: 10px;
+        }
 
         .tag-holder {
             display: inline-flex;
+            margin: auto;
+            float: left;
+            text-align: center;
         
             .tag {
                 background-color: $primary-green;

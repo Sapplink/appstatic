@@ -1,16 +1,45 @@
 <div class="row">
     <div class="col-md-12 design">
-        <div class="title">
+        <div class="col-md-12 title">
             <span>{{ 'designsPage.title' | translate }}</span>
             <br>
             <!-- Add an ngIf after RL user created to display button only for developer -->
-        <button (click)="addPost()">{{ 'designsPage.addDesign' | translate }}</button>
+        <button (click)="addPost()"
+        *ngIf="!inProduction">{{ 'designsPage.addDesign' | translate }}</button>
         </div>
-        <div class="cards" *ngFor="let card of cards">
+        <br>
+        <br>
+        <span class="col-md-12 coming-soon">{{ 'shared.comingSoon' | translate }}</span>
+        <!-- <div class="cards" *ngFor="let card of cards">
             <app-card [imageURL]="'assets/images/' + card.data.cardImg"
                 [cardTitle]="card.data.cardTitle"
                 [cardTags]="card.data.cardTags"
             ></app-card>
+        </div> -->
+        <div class="cards">
+            <app-card imageURL="assets/images/ai_stock.jpg"
+            cardTitle="Determining Manupilation in Photos using Machine Learning"
+            cardTags="AI, Classification"></app-card>
+
+            <app-card imageURL="assets/images/covid-stock.jpg"
+            cardTitle="COVID-19 Second Wave Scenario Risk Analysis for a Sulphuric Acid Project"
+            cardTags="Python, Monte Carlo"></app-card>
+
+            <app-card imageURL="assets/images/stock_market_stock.jpg"
+            cardTitle="Machine Learning in Finance: Predicting Stock Prices"
+            cardTags="Fintech, ML, UI"></app-card>
+
+            <app-card imageURL="assets/images/sapplink-logo.png"
+            cardTitle="Sapplink Application Development: Portfolio and Online Presence"
+            cardTags="UX/UI, Angular, Node"></app-card>
+
+            <app-card imageURL="assets/images/sapplink-logo.png"
+            cardTitle="Sapplink Application Development: Portfolio and Online Presence"
+            cardTags="UX/UI, Angular, Node" style="visibility: hidden;"></app-card>
+
+            <app-card imageURL="assets/images/sapplink-logo.png"
+            cardTitle="Process Piping Fabrication and Erection Manhour Estimator App"
+            cardTags="iOS, Flutter, UX/UI" style="visibility: hidden;"></app-card>  <!-- Future Project: Hidden for now -->
         </div>
     </div>
 </div>

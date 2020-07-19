@@ -10,6 +10,7 @@ export class VariableService {
   navigationClickable = true;
   currentApplicationLanguage = 'en';
   release: string;
+  isInProduction = true;
 
   constructor(private router: Router) { 
     this.release = 'alpha'

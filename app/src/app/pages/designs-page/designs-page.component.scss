@@ -6,8 +6,8 @@
     vertical-align: middle;
 
     .title {
-        margin-right: 60px;
-        margin-top: 20px;
+        text-align: center;
+        margin: auto;
         animation-name: titleSmoothIn;
         animation-duration: 0.35s;
         animation-timing-function: ease-in;
@@ -40,5 +40,31 @@
         -webkit-font-smoothing: antialiased;
         margin: auto;
         text-align: center;
+    }
+
+    .coming-soon {
+        font-size: 11pt;
+        font-weight: normal;
+    }
+
+    .cards {
+        display: grid;
+        width: 98%;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-template-areas: post post post post;
+        float: left;
+        visibility: hidden;
+
+        app-card {
+            margin: auto;
+            margin-bottom: 50px;
+            grid: post;
+            animation: easeInAppear;
+            animation-duration: 0.5s;
+            animation-delay: 0.8s;
+            opacity: 0;
+            animation-fill-mode: forwards;
+            animation-timing-function: ease-in;
+        }
     }
 }
