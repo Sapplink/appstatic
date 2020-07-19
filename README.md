@@ -12,7 +12,7 @@ RL - NodeJS & Express
   
 DB - MongoDB
 
-# --------------------------
+--------------------------
 # Release Schedule
 
 Phase 1: Alpha release will only include UI (no RL or DB), and has anticipated launch date of September 1, 2020.
