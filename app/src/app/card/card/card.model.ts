@@ -3,4 +3,5 @@ export class Card {
     cardTags: string[];
     cardImg: string;
     cardContent: string;
+    cardLink: string;
 }

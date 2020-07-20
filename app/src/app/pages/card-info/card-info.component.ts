@@ -11,13 +11,26 @@ import { DatePipe } from '@angular/common';
 })
 export class CardInfoComponent implements OnInit {
   closeDialog = new EventEmitter();
-  myDate: Date;
 
   constructor(@Inject(MAT_DIALOG_DATA) public data: Card, private datePipe: DatePipe) {
-    this.myDate = new Date();
   }
 
   ngOnInit(): void {
+  }
+
+  // Getter to be removed in Phase 2
+  get cardTitle() {
+    let title;
+    if (this.data.cardLink === 'https://github.com/Sapplink/APS360Project') {
+      title = 'aps360';
+    } else if (this.data.cardLink === 'https://github.com/marcmerih/covid19-monte-carlo') {
+      title = 'monte-carlo'
+    } else if (this.data.cardLink === 'https://github.com/Sapplink/appstatic') {
+      title = 'sapplink'
+    } else {
+      title = '';
+    }
+    return title;
   }
 
 }

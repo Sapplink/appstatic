@@ -14,6 +14,8 @@
         opacity: 0;
         animation-delay: 0.15s;
         animation-fill-mode: forwards;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
 
         span {
             font-size: 30pt;
@@ -30,6 +32,8 @@
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         grid-template-areas: post post post post;
         float: left;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
 
         app-card {
             margin: auto;
@@ -49,5 +53,6 @@
         -webkit-font-smoothing: antialiased;
         margin: auto;
         text-align: center;
+        text-rendering: optimizeLegibility;
     }
 }

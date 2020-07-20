@@ -12,30 +12,44 @@
             <app-card imageURL="assets/images/ai_stock.jpg"
             cardTitle="Determining Manupilation in Photos Using Machine Learning"
             cardTags="AI, Classification"
-            [cardContent]="photoClassificationContent"></app-card>
+            [cardContent]="photoClassificationContent"
+            cardLink="https://github.com/Sapplink/APS360Project"></app-card>
 
             <app-card imageURL="assets/images/covid-stock.jpg"
             cardTitle="COVID-19 Second Wave Scenario Risk Analysis for a Sulphuric Acid Project"
             cardTags="Python, Monte Carlo"
-            [cardContent]="monteCarloContent"></app-card>
-
-            <app-card imageURL="assets/images/stock_market_stock.jpg"
-            cardTitle="Machine Learning in Finance: Predicting Stock Prices"
-            cardTags="Fintech, ML, UI"
-            [cardContent]="utefaContent"></app-card>
+            [cardContent]="monteCarloContent"
+            cardLink="https://github.com/marcmerih/covid19-monte-carlo"></app-card>
 
             <app-card imageURL="assets/images/sapplink-logo.png"
             cardTitle="Sapplink Application Development: Portfolio and Online Presence"
             cardTags="UX/UI, Angular, Node"
-            [cardContent]="sapplinkContent"></app-card>
+            [cardContent]="sapplinkContent"
+            cardLink="https://github.com/Sapplink/appstatic"></app-card>
 
-            <app-card imageURL="assets/images/sapplink-logo.png"
-            cardTitle="Sapplink Application Development: Portfolio and Online Presence"
-            cardTags="UX/UI, Angular, Node" style="visibility: hidden;"></app-card>
+            <app-card imageURL="assets/images/fpl.jpg"
+            cardTitle="Predicting the Fantasy Premier League: Modelling the Winning Team"
+            cardTags="Analytics, Optim. Models"
+            [cardContent]="fplContent"
+            cardLink="https://github.com/marcmerih/"></app-card>
 
-            <app-card imageURL="assets/images/sapplink-logo.png"
-            cardTitle="Process Piping Fabrication and Erection Manhour Estimator App"
-            cardTags="iOS, Flutter, UX/UI" style="visibility: hidden;"></app-card>  <!-- Future Project: Hidden for now -->
+            <app-card imageURL="assets/images/piping.png"
+            cardTitle="Process Piping Fabrication & Erection Manhour Estimator (Coming Soon)"
+            cardTags="iOS, Flutter, UX/UI"
+            [cardContent]="pipingContent"
+            cardLink="https://github.com/marcmerih/"></app-card>  <!-- Future Project: Hidden for now -->
+        
+            <app-card imageURL="assets/images/stock_market_stock.jpg"
+            cardTitle="Machine Learning in Finance: Predicting Stock Prices (Coming Soon)"
+            cardTags="Fintech, ML, UI"
+            [cardContent]="utefaContent"
+            cardLink="https://github.com/marcmerih/"></app-card>  
+      
+            <app-card imageURL="assets/images/tesla.jpeg"
+            cardTitle="Creating a GPS Application That Learns: iNAGO (Coming Soon)"
+            cardTags="UX/UI, AI, Analytics"
+            [cardContent]="inagoContent"
+            cardLink="https://github.com/marcmerih/"></app-card>
         </div>
         <!-- To Be Uncommented When Database is created -->
         <!-- <div class="cards" *ngFor="let card of cards">

@@ -12,6 +12,7 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class ProjectsPageComponent implements OnInit {
   cards: Array<Card> = []; // must be updated when backend is created. this is only intermediary
+  assets: string = '../../../../assets/documents/';
   constructor(public dialog: MatDialog, private variableService: VariableService,
     private translate: TranslateService) {
   }
@@ -52,6 +53,18 @@ export class ProjectsPageComponent implements OnInit {
   }
 
   get sapplinkContent(): string {
+    return this.translate.instant('projectsPage.sapplinkContent');
+  }
+
+  get inagoContent(): string {
+    return this.translate.instant('projectsPage.inagoContent');
+  }
+
+  get pipingContent(): string {
+    return this.translate.instant('projectsPage.sapplinkContent');
+  }
+
+  get fplContent(): string {
     return this.translate.instant('projectsPage.sapplinkContent');
   }
 }

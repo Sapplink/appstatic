@@ -13,6 +13,7 @@ export class CardComponent implements OnInit {
   @Input() cardContent: string;
   @Input() cardTitle: string;
   @Input() cardTags: string;
+  @Input() cardLink: string;
   tags: string[];
 
   constructor(private dialog: MatDialog) { }
@@ -44,7 +45,8 @@ export class CardComponent implements OnInit {
       cardContent: this.cardContent,
       cardTags: this.tags,
       cardTitle: this.cardTitle,
-      cardImg: this.imageURL
+      cardImg: this.imageURL,
+      cardLink: this.cardLink
     };
 
     let dialogRef = this.dialog.open(CardInfoComponent, {
