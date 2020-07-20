@@ -60,7 +60,7 @@
         "areYouSure": "Dil'i degistirmekten emin misiniz: "
     },
     "contact": {
-        "title": "İletişim (Yakında Sizlerle)",
+        "title": "İletişim",
         "contactTypes": {
             "title": "İletişim Sebebiniz",
             "errors": {

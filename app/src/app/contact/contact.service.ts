@@ -21,9 +21,9 @@ export class ContactService {
       mailContent: ['', Validators.required]
     });
     console.log(this.isAlphaRelease);
-    if (this.isAlphaRelease) {
-      this.FormData.disable();
-    }
+    // if (this.isAlphaRelease) {
+    //   this.FormData.disable();
+    // }
   }
 
   submitForm(input: any) {
