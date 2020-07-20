@@ -4,20 +4,55 @@ i {
 .information {
     margin: auto;
     text-align: center;
+
     .title {
-        font-size: 15pt;
-        font-family: Merriweather;
+        // font-size: 17pt;
+        font-family: Merriweather !important;
+        text-decoration: underline;
         margin: auto;
         text-align: center;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
     }
 
-    .date {
+    .git {
+        margin-right: 1%;
+    }
+
+    .link {
         font-size: 9pt;
-        font-family: Playfair Display;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
     }
 }
 
 .content {
-    text-align: center;
+    text-align: justify;
     margin: auto;
+    margin-top: 60px;
+    font-family: Playfair Display;
+    font-size: 12pt;
+    line-height: 28px;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+
+    .img {
+        margin: auto !important;
+        text-align: center !important;
+
+        .fakenews {
+            height: 30em;
+            width: auto;
+        }
+
+        .density {
+            height: 20em;
+            width: auto;
+        }
+
+        .structure {
+            height: 25em;
+            width: auto;
+        }
+    }
 }

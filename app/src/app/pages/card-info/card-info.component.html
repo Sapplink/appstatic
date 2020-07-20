@@ -1,16 +1,128 @@
 <div class="row">
+    <!-- Phase 2: Below -->
     <div class="col-md-12">
         <i class="material-icons back-button" (click)="closeDialog.emit()">keyboard_backspace</i>
     </div>
     <div *ngIf="data" class="col-md-12 information">
         <div class="col-md-12">
-            <span class="col-md-12 title">{{ data.cardTitle }}</span>
+            <h2 class="col-md-12 title">{{ data.cardTitle }}</h2>
             <br>
-            <span class="date">{{ myDate | date: 'shortDate' }}</span>
+            <img src="https://img.icons8.com/material-rounded/24/000000/github.png" class="git">
+            <a [href]="data.cardLink" class="link">{{ data.cardLink }}</a>
         </div>
-        <div class="col-md-12 content">
+        <div class="col-md-9 content">
             <span class="content">
-                {{ data.cardContent }}
+                <!-- Phase 1: Hardcoded into UI -->
+                <div *ngIf="cardTitle === 'aps360'" class="col-md-12">
+                    <h4><b>Background</b></h4>
+                    <br>
+                    <span>
+                        Photo-altering tools are becoming crazy available and easier to use than ever. 
+                        Whether it is to deceive friends and fans on social media platforms (and potentially
+                        boost self-confidence and self-assurance? Maybe there should be a psychological 
+                        study completed in this topic as well), or to increase number of clicks by clickbaiting 
+                        naive individuals and linking them to fake news articles; the possible use cases are endless. 
+                        So is there a way to aid people's decisions making processes when they are looking at an image
+                        and trying to figure out if its real or not?
+                    </span>
+                    <br>
+                    <br>
+                    <div class="col-md-12 img">
+                        <img src="assets/images/digitally_altered_img.png" class="fakenews">
+                    </div>
+                    <span class="col-md-12 figure">Figure 1. Fox actually used a photoshopped image on their platform (the soldier in the original image on the right was photoshopped into the left image). They took it down immediately.</span>
+                    <br>
+                    <br>
+                    <span>
+                        Kind of cool, right? At the time this project was proposed and taken on, there really was not much 
+                        documentation on creating a machine learning model to detect and classify photos which have been altered 
+                        from their natural state. Past methods in identifying manipulation in images would utilize Meta Data analysis, 
+                        error-level analysis, and filtering methods. Yet these approaches, as you can imagine, all require a human to 
+                        analyze the results and make the final prediction. Together with fellow U of T engineering classmates Ita Zaporozhets 
+                        and Chris Palumbo, we took the liberty to start this artificial intelligence approach from scratch.
+                    </span>
+                    <br>
+                    <br>
+                    <h4><b>Data</b></h4>
+                    <br>
+                    <span>
+                        As with any machine learning project you start, the model will only be as good as the data that it trains on; in other words, 
+                        the model is only as good as its weakest link, where the weakest link is the data. In this case, we came across a fairly large 
+                        dataset from a photoshop contest that had taken place on Reddit, called the Reddit Photoshop Battle. Fortunately for us, members 
+                        of the University of Basel summarized the data statistics in a report and provided a GitHub repository to download the labelled 
+                        photos (so we had to do minimal labelling work - which was essential, since that would have been an absolute pain to finish in time). 
+                        The dataset was widely diverse in photoshop techniques such as splicing (combining parts of 2 different images) and copy-move (rearranging 
+                        parts of the same image) . As well, in some photos, there was emphasis on making the image look “obviously photoshopped” for humour purposes. 
+                        In the cases where that wasn't the case... well, our model would have to be properly equipped to not succumb to false positives/negatives!
+                    </span>
+                    <br>
+                    <br>
+                    <span>
+                        The entire dataset was a whopping 40GB in size, and comprised of approximately 11,000 original and over 100,000 photoshopped images. The photo 
+                        heights ranged from 136-20,000 pixels, of which you can see in the histogram below. We downloaded it using a script published on GitHub, but as 
+                        you can appreciate, we were only able to obtain a half due to resource constraints. In terms of labelling, the original images were named with a 
+                        unique code, and their respective photoshopped versions included the original image code and their own unique derivative numbers.
+                    </span>
+                    <br>
+                    <br>
+                    <div class="img">
+                        <img src="assets/images/aps360_density.png" class="density">
+                    </div>
+                    <span class="col-md-12 figure">Figure 2. Histogram of heights of images in the raw dataset.</span>
+                    <br>
+                    <br>
+                    <span>
+                        Of course, this data had to be cleaned. We weren't off the hook yet. We found that the set of images with the most frequent size was 600-1100 pixels, and 
+                        so images that fell in this range were selected to minimize the amount of cropping to be done. Each image was center cropped to 600 by 600 pixels. We also 
+                        wanted to avoid negative subsampling, so only 1 photoshopped version of each original was considered in the training dataset. Each batch in training was ensured 
+                        to look at both the original and the photoshopped version of each image to compare the photoshopped components to the ground truth. They were concatenated on disk 
+                        and split within the training loop. As we anticipated, the photoshopped features were cropped out of some images during the center-crop - these few occurences were 
+                        manually removed from the dataset.
+                    </span>
+                    <br>
+                    <br>
+                    <h4><b>Software Structure</b></h4>
+                    <span>
+                        The structure can best be understood from looking at the overall schema, in a visual manner. So you can check out the figure below and follow along each step with
+                        the list below. The structure can be organized into 5 steps:
+                    </span>
+                    <br>
+                    <br>
+                    <ul>
+                        <li><b>Image Preprocessing:</b> Each original image is concatenated with one manipulated derivative. 2000 images are split into subsections of 60/20/20 for the training, 
+                            validation, and test sets.
+                        </li>
+                        <li><b>Resnet Features:</b> Each concatenated image is split, the resnet features are loaded, and the tensor of features is concatenated.</li>
+                        <li><b>DataLoader:</b> 3 Data Loader functions are created to load either unfiltered images, High-Pass filter images, or Low-Pass filter images.</li>
+                        <li><b>Train Function:</b> In each batch of images, the tensor representing the image resnet features are split into the original and derivative versions. 
+                            The loss function used is Cross Entropy Loss and the optimizer is SGD.
+                        </li>
+                        <li><b>Hyperparameter Grid Search:</b> Iterates over different filter options, batch sizes, weight decay values, learning rates, and learning rate decay values.</li>
+                    </ul>
+                    <br>
+                    <br>
+                    <div class="img">
+                        <img src="assets/images/aps360_structure.png" class="structure">
+                    </div>
+                    <span class="col-md-12 figure">Figure 3. Overall step-by-step structure of the software.</span>
+                </div>
+
+                <div *ngIf="">
+                    <span></span>
+                </div>
+
+                <div *ngIf="">
+                    <span></span>
+                </div>
+
+                <div *ngIf="">
+                    <span></span>
+                </div>
+
+                <div *ngIf="">
+                    <span></span>
+                </div>
+                <!-- {{ data.cardContent }} --> <!-- To Be Continued in Phase 2 -->
             </span>
         </div>
     </div>

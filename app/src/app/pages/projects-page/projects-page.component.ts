@@ -4,7 +4,6 @@ import { MatDialog } from '@angular/material/dialog';
 import { AddPostComponent } from 'src/app/add-post/add-post/add-post.component';
 import { VariableService } from 'src/app/variable.service';
 import { TranslateService } from '@ngx-translate/core';
-import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-projects-page',
@@ -15,7 +14,7 @@ export class ProjectsPageComponent implements OnInit {
   cards: Array<Card> = []; // must be updated when backend is created. this is only intermediary
   assets: string = '../../../../assets/documents/';
   constructor(public dialog: MatDialog, private variableService: VariableService,
-    private translate: TranslateService, private http: HttpClient) {
+    private translate: TranslateService) {
   }
 
   ngOnInit(): void {
@@ -42,7 +41,7 @@ export class ProjectsPageComponent implements OnInit {
   // These getters to be moved to Database once RL and DB created.
 
   get photoClassificationContent(): string {
-    return;
+    return this.translate.instant('projectsPage.aps360Content');
   }
 
   get monteCarloContent(): string {
@@ -54,6 +53,18 @@ export class ProjectsPageComponent implements OnInit {
   }
 
   get sapplinkContent(): string {
+    return this.translate.instant('projectsPage.sapplinkContent');
+  }
+
+  get inagoContent(): string {
+    return this.translate.instant('projectsPage.inagoContent');
+  }
+
+  get pipingContent(): string {
+    return this.translate.instant('projectsPage.sapplinkContent');
+  }
+
+  get fplContent(): string {
     return this.translate.instant('projectsPage.sapplinkContent');
   }
 }

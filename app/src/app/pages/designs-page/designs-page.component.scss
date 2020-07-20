@@ -14,15 +14,21 @@
         opacity: 0;
         animation-delay: 0.15s;
         animation-fill-mode: forwards;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
 
         span {
             font-size: 30pt;
+            text-rendering: optimizeLegibility;
+            -webkit-font-smoothing: antialiased;
         }
     }
 
     button {
         width: 8em;
         margin-left: 20%;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
     }
     app-card {
         display: inline-flexbox;
@@ -40,11 +46,14 @@
         -webkit-font-smoothing: antialiased;
         margin: auto;
         text-align: center;
+        text-rendering: optimizeLegibility;
     }
 
     .coming-soon {
         font-size: 11pt;
         font-weight: normal;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
     }
 
     .cards {
@@ -54,6 +63,8 @@
         grid-template-areas: post post post post;
         float: left;
         visibility: hidden;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
 
         app-card {
             margin: auto;
