@@ -23,6 +23,8 @@ import { FooterComponent } from './navigation/footer/footer/footer.component';
 import { LanguageChangePopupComponent } from './language-change-popup/language-change-popup.component';
 import { ContactService } from './contact/contact.service';
 import { CardInfoComponent } from './pages/card-info/card-info.component';
+import { Aps360ProjectComponent } from './pages/projects/aps360-project/aps360-project.component';
+import { CovidMonteCarloComponent } from './pages/projects/covid-mc/covid-monte-carlo/covid-monte-carlo.component';
 
 
 export function HttpLoaderFactory(http: HttpClient) {
@@ -43,7 +45,9 @@ export function HttpLoaderFactory(http: HttpClient) {
     ContactComponent,
     FooterComponent,
     LanguageChangePopupComponent,
-    CardInfoComponent
+    CardInfoComponent,
+    Aps360ProjectComponent,
+    CovidMonteCarloComponent
   ],
   imports: [
     BrowserModule,
