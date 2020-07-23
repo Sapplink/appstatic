@@ -1,1 +1,126 @@
-<p>covid-monte-carlo works!</p>
+<div class="col-md-12">
+    <h4><b>{{ 'aps360.headline1' | translate }}</b></h4>
+    <br>
+    <span>{{ 'aps360.prg1' | translate }}</span>
+    <br>
+    <br>
+    <div class="col-md-12 img">
+        <img src="assets/images/digitally_altered_img.png" class="fakenews">
+    </div>
+    <span class="col-md-12 figure">{{ 'aps360.figure1' | translate }}</span>
+    <br>
+    <br>
+    <span>{{ 'aps360.prg2' | translate }}</span>
+    <br>
+    <br>
+    <h4><b>{{ 'aps360.headline2' | translate }}</b></h4>
+    <br>
+    <span>{{ 'aps360.prg3' | translate }}</span>
+    <br>
+    <br>
+    <span>{{ 'aps360.prg4' | translate }}</span>
+    <br>
+    <br>
+    <div class="img">
+        <img src="assets/images/aps360_density.png" class="density">
+    </div>
+    <span class="col-md-12 figure">{{ 'aps360.figure2' | translate }}</span>
+    <br>
+    <br>
+    <span>{{ 'aps360.prg5' | translate }}</span>
+    <br>
+    <br>
+    <h4><b>{{ 'aps360.headline3' | translate }}</b></h4>
+    <br>
+    <span>{{ 'aps360.prg6' | translate }}</span>
+    <br>
+    <br>
+    <ul>
+        <li><b>Image Preprocessing:</b> Each original image is concatenated with one manipulated derivative. 2000 images are split into subsections of 60/20/20 for the training, 
+            validation, and test sets.
+        </li>
+        <li><b>Resnet Features:</b> Each concatenated image is split, the resnet features are loaded, and the tensor of features is concatenated.</li>
+        <li><b>DataLoader:</b> 3 Data Loader functions are created to load either unfiltered images, High-Pass filter images, or Low-Pass filter images.</li>
+        <li><b>Train Function:</b> In each batch of images, the tensor representing the image resnet features are split into the original and derivative versions. 
+            The loss function used is Cross Entropy Loss and the optimizer is SGD.
+        </li>
+        <li><b>Hyperparameter Grid Search:</b> Iterates over different filter options, batch sizes, weight decay values, learning rates, and learning rate decay values.</li>
+    </ul>
+    <div class="img">
+        <img src="assets/images/aps360_structure.png" class="structure">
+    </div>
+    <span class="col-md-12 figure">{{ 'aps360.figure3' | translate }}</span>
+    <br>
+    <br>
+    <h4><b>{{ 'aps360.headline4' | translate }}</b></h4>
+    <br>
+    <span>{{ 'aps360.prg7' | translate }}</span>
+    <br>
+    <br>
+    <br>
+    <div class="img">
+        <img src="assets/images/aps360_filters.png" class="filters">
+    </div>
+    <span class="col-md-12 figure">{{ 'aps360.figure4' | translate }}</span>
+    <br>
+    <br>
+    <h4><b>{{ 'aps360.headline5' | translate }}</b></h4>
+    <br>
+    <span>{{ 'aps360.prg8' | translate }}</span>
+    <br>
+    <br>
+    <span>{{ 'aps360.prg9' | translate }}</span>
+    <br>
+    <br>
+    <div class="img">
+        <img src="assets/images/aps360_resnet18.png" class="resnet">
+    </div>
+    <span class="col-md-12 figure">{{ 'aps360.figure5' | translate }}</span>
+    <br>
+    <br>
+    <h4><b>{{ 'aps360.headline6' | translate }}</b></h4>
+    <br>
+    <span>{{ 'aps360.prg10' | translate }}</span>
+    <br>
+    <br>
+    <div class="img">
+        <img src="assets/images/aps360_classification.png" class="classification">
+    </div>
+    <span class="col-md-12 figure">{{ 'aps360.figure6' | translate }}</span>
+    <br>
+    <br>
+    <h4><b>{{ 'aps360.headline7' | translate }}</b></h4>
+    <br>
+    <span>{{ 'aps360.prg11' | translate }}</span>
+    <br>
+    <br>
+    <div class="img">
+        <img src="assets/images/aps360_gridsearch.png" class="gridsearch">
+    </div>
+    <span class="col-md-12 figure">{{ 'aps360.figure7' | translate }}</span>
+    <br>
+    <br>
+    <span>{{ 'aps360.prg12' | translate }}</span>
+    <br>
+    <br>
+    <div class="img">
+        <img src="assets/images/aps360_trainvsval.png" class="curve">
+        <img src="assets/images/aps360_losscurve.png" class="curve">
+    </div>
+    <span class="col-md-12 figure">{{ 'aps360.figure8' | translate }}</span>
+    <br>
+    <br>
+    <span>{{ 'aps360.prg13' | translate }}</span>
+    <br>
+    <br>
+    <div class="img">
+        <img src="assets/images/aps360_modelacc.png" class="accuracy">
+    </div>
+    <span class="col-md-12 figure">{{ 'aps360.figure9' | translate }}</span>
+    <br>
+    <br>
+    <h4><b>{{ 'aps360.headline8' | translate }}</b></h4>
+    <br>
+    <span>{{ 'aps360.prg14' | translate }}</span>
+</div>
+<br>
