@@ -13,13 +13,16 @@
         <div class="col-md-9 content">
             <span class="content">
                 <!-- Phase 1: Hardcoded into UI -->
-
-                <app-aps360-project *ngIf="cardTitle === 'aps360'"
-                ></app-aps360-project>
-
-                <app-covid-monte-carlo *ngIf="cardTitle === 'monte-carlo'"
-                ></app-covid-monte-carlo>
-
+                <div *ngIf="cardTitle === 'aps360' || cardTitle === 'monte-carlo'">
+                    <app-aps360-project *ngIf="cardTitle === 'aps360'"
+                    ></app-aps360-project>
+    
+                    <app-covid-monte-carlo *ngIf="cardTitle === 'monte-carlo'"
+                    ></app-covid-monte-carlo>
+                </div>
+                <div *ngIf="cardTitle !== 'aps360' && cardTitle !== 'monte-carlo'">
+                    <span>More about this coming soon. Stay tuned!</span>
+                </div>
                 <!-- {{ data.cardContent }} --> <!-- To Be Continued in Phase 2 -->
             </span>
         </div>
