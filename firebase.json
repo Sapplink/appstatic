@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist/sapplink",
+    "public": "app/dist/app",
     "ignore": [
       "firebase.json",
       "**/.*",
