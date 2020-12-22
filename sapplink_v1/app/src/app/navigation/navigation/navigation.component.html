@@ -1,0 +1,16 @@
+<div class="row">
+    <div [ngClass]="navigationMenuStyling">
+        <ul class="nav-menu-items">
+            <a routerLink="/landing-page" routerLinkActive="active"><li>{{ 'navigation.home' | translate }}</li></a>
+            <a routerLink="/references" routerLinkActive="active"><li>{{ 'navigation.references' | translate }}</li></a>
+            <a routerLink="/contact" routerLinkActive="active"><li>{{ 'navigation.contact' | translate }}</li></a>
+        </ul>
+    </div>
+    <div class="col-md-12 thin-nav">
+        <img src='../../../assets/images/logo-white.png' class="logo">
+        <i class="material-icons icon" *ngIf="!navigationAccordionStatus" (click)="toggleNavigationBar()" [title]="openMenu">menu</i>
+        <i class="material-icons icon" *ngIf="navigationAccordionStatus" (click)="toggleNavigationBar()" [title]="closeMenu">close</i>
+        <img src="../../../assets/images/turkey-flag.png" class="flag-turkey" (click)="toggleLanguageTo('tr')">
+        <img src="../../../assets/images/england-flag.jpg" class="flag-england" (click)="toggleLanguageTo('en')">
+    </div>
+</div>

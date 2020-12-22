@@ -1,0 +1,81 @@
+@import '../../../styles.scss';
+
+.card-container {
+    width: 14em;
+    height: 22%;
+    border: 1px solid $white;
+    border-radius: 6px;
+    box-shadow: 0px 0px 8px 0.1px $white;
+    outline: 10px solid transparent;
+    margin: 5% auto;
+    overflow: hidden;
+
+    .header-img {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+        img {
+            display: inline;
+            object-fit: cover;
+            margin-right: 75px;
+            height: auto;
+            width: 103%;
+        }
+
+
+    .card-title {
+        font-family: Playfair Display;
+        font-weight: 400;
+        font-size: 11pt;
+        line-height: 30px;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+        margin-right: 10px;
+        text-align: left;
+
+        a, a label {
+            text-decoration: underline;
+            color: blue;
+            cursor: pointer;
+        }
+    }
+
+    .card-tags {
+        font-family: Playfair Display;
+        font-size: 8pt;
+        cursor: default;
+        line-height: 30px;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+        padding: 5px;
+        display: inline;
+        white-space: nowrap;
+        color: $white;
+        text-align: center;
+        display: inline-flex;
+        float: left;
+
+        .tags-title {
+            color: black;
+            float: left;
+            margin-left: 10px;
+        }
+
+        .tag-holder {
+            display: inline-flex;
+            margin: auto;
+            float: left;
+            text-align: center;
+        
+            .tag {
+                background-color: $primary-green;
+                border-radius: 10px;
+                margin-right: 10px;
+                padding: 6px;
+                white-space: nowrap;
+                font-weight: bold !important;
+            }
+        }
+    }
+}

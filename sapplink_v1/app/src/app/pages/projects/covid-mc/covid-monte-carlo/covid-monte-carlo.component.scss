@@ -1,0 +1,78 @@
+i {
+    cursor: pointer;
+}
+
+span {
+    white-space: pre-wrap;
+}
+
+.information {
+    margin: auto;
+    text-align: center;
+    white-space: pre-wrap;
+
+    .title {
+        // font-size: 17pt;
+        font-family: Merriweather !important;
+        text-decoration: underline;
+        margin: auto;
+        text-align: center;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+    }
+
+    .git {
+        margin-right: 1%;
+    }
+
+    .link {
+        font-size: 9pt;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+    }
+}
+
+.img {
+    margin: auto !important;
+    text-align: center !important;
+
+    .fakenews {
+        height: 25em;
+        width: auto;
+    }
+
+    .density {
+        height: 10em;
+        width: auto;
+    }
+
+    .structure {
+        height: 22em;
+        width: auto;
+    }
+
+    .filters {
+        height: 15em;
+        width: auto;
+    }
+
+    .resnet {
+        height: 15em;
+        width: auto;
+    }
+
+    .classification {
+        height: 25em;
+        width: auto;
+    }
+
+    .curve {
+        height: 17em;
+        width: auto;
+    }
+
+    .accuracy {
+        height: 5em;
+        width: auto;
+    }
+}
