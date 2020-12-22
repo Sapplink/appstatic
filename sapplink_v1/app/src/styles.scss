@@ -1,0 +1,106 @@
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+// Colour Themes
+
+$white: #efefef;
+$black: #161616;
+$primary-green: #8bd126;
+$secondary-green: #acf230;
+
+body {
+    width: 100.8%;
+    margin-left: 1px;
+    overflow-x: hidden;
+}
+span, p, h1, h2, h3, h4 {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    font-family: Playfair Display;
+    font-weight: 400;
+}
+// Global Button
+
+button {
+    background-color: $black;
+    border: 1px solid $black;
+    color: $white;
+    border-collapse: separate;
+    border-radius: 3px !important;
+    width: 45%;
+    text-align: center !important;
+    padding: 5px;
+    margin: 15px auto 15px auto !important;
+    transition: background-color, color 0.3s ease-in-out;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+
+    &:hover {
+        background-color: $white;
+        color: $black;
+    }
+
+    &:disabled {
+        background-color: $white;
+        color: black;
+    }
+
+    &:disabled:hover {
+        background-color: $white;
+    }
+}
+
+textarea:disabled {
+    background-color: white;
+    border-color: gray;
+}
+
+// Global small text
+.small-text {
+    font-family: Playfair Display;
+    font-weight: 400;
+    font-size: 11.8pt;
+    line-height: 30px;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+.figure {
+    font-family: Playfair Display;
+    font-weight: 400;
+    font-size: 9pt;
+    text-align: center;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+.close-button {
+    float: right;
+    cursor: pointer;
+}
+
+// Keyframe animation declarations
+// Transform these to on-scroll JS animations before / after rollout.
+
+@keyframes titleSmoothIn {
+    0% {
+        position: relative;
+        top: -80px;
+        opacity: 0;
+    }
+    100% {
+        position: relative;
+        opacity: 1;
+        top: 0px;
+    }
+}
+
+@keyframes easeInAppear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

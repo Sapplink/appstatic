@@ -1,0 +1,56 @@
+<div class="row">
+    <div class="col-md-12">
+        <span class="title">{{ 'landingPage.contents.sapplinkSolutions' | translate }}</span>
+        <br>
+        <span class="motto">{{ 'landingPage.contents.companyMotto' | translate }}</span>
+    </div>
+    <br>
+
+    <div class="col-md-12 contents">
+        <div class="col-md-6 description">
+            <span class="col-md-12 small-text">
+                {{ 'landingPage.contents.projectsDescriptionPartOne' | translate }}
+                <u><a (click)="openFounder()" [title]="aboutFounder">
+                    {{ 'shared.founder' | translate }}
+                </a></u>
+                {{ 'landingPage.contents.projectsDescriptionPartTwo' | translate }}
+            </span>
+        </div>
+        <br>
+        <div class="col-md-2 projects">
+            <button type="button"
+            id="landingPage-projectsButton" 
+            [title]="projectsButtonHover"
+            routerLink="/projects"
+            routerLinkActive="active">
+            <i class="material-icons icon">build_circle</i>
+                {{ 'landingPage.contents.buttons.projectsButton' | translate }}
+            </button>
+        </div>
+        <div class="col-md-2 designs">
+            <button type="button"
+            id="landingPage-designsButton" 
+            [title]="designsButtonHover"
+            routerLink="/designs"
+            routerLinkActive="active">
+            <i class="material-icons icon">eco</i>
+                {{ 'landingPage.contents.buttons.designsButton' | translate }}
+            </button>
+        </div>
+    </div>
+
+    <div class="col-md-12 clients small-text">
+        <span>{{ 'landingPage.clientelle.clients' | translate }}</span>
+        <div class="client-images col-md-12">
+            <a href="https://www.utefa.com/"><img src="../../../assets/images/UTEFA_LOGO.png" [title]="utefaTitle"></a>
+            &nbsp;
+            &nbsp;
+            <a href="https://www.intact.ca/en/personal-insurance.html"><img src="../../../assets/images/INTACT_LOGO.png" 
+                [title]="intactTitle"></a>
+            <!-- &nbsp;
+            &nbsp; -->
+            <!-- <a href="http://www.inago.com/company-inago/"><img src="../../../assets/images/inago-logo.jpg" 
+                [title]="inagoTitle"></a> -->
+        </div>
+    </div>
+</div>

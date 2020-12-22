@@ -1,0 +1,30 @@
+<div class="row">
+    <!-- Phase 2: Below -->
+    <div class="col-md-12">
+        <i class="material-icons back-button" (click)="closeDialog.emit()">keyboard_backspace</i>
+    </div>
+    <div *ngIf="data" class="col-md-12 information">
+        <div class="col-md-12">
+            <h2 class="col-md-12 title">{{ data.cardTitle }}</h2>
+            <br>
+            <img src="https://img.icons8.com/material-rounded/24/000000/github.png" class="git">
+            <a [href]="data.cardLink" class="link">{{ data.cardLink }}</a>
+        </div>
+        <div class="col-md-9 content">
+            <span class="content">
+                <!-- Phase 1: Hardcoded into UI -->
+                <div *ngIf="cardTitle === 'aps360' || cardTitle === 'monte-carlo'">
+                    <app-aps360-project *ngIf="cardTitle === 'aps360'"
+                    ></app-aps360-project>
+    
+                    <app-covid-monte-carlo *ngIf="cardTitle === 'monte-carlo'"
+                    ></app-covid-monte-carlo>
+                </div>
+                <div *ngIf="cardTitle !== 'aps360' && cardTitle !== 'monte-carlo'">
+                    <span>More about this coming soon. Stay tuned!</span>
+                </div>
+                <!-- {{ data.cardContent }} --> <!-- To Be Continued in Phase 2 -->
+            </span>
+        </div>
+    </div>
+</div>

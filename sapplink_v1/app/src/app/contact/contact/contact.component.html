@@ -1,0 +1,79 @@
+<div class="row">
+    <div class="col-md-12 contacts-page">
+        <form action="https://mailthis.to/" method="POST" encType="multipart/form-data" 
+        [formGroup]="formGroup" (ngSubmit)="submitForm()" *ngIf="formGroup">
+            <span class="title">{{ 'contact.title' | translate }}</span>
+            <br>
+            <br>
+            <div class="contact">
+                <div>
+                    <span>{{ 'contact.contactTypes.title' | translate }}</span>
+                    <br>
+                    <select id="contact-type" 
+                    name="contact-type" 
+                    formControlName='contactType'>
+                        <option value=""
+                        selected
+                        >{{ 'shared.select' | translate}}</option>
+                        <option *ngFor="let type of contactTypesEN"
+                        [value]="type"
+                        placeholder="--Select--"
+                        >{{type}}</option>
+                    </select>
+                </div>
+                <div *ngIf="shouldDisplayProjectTypes">
+                    <br>
+                    <span>{{ 'contact.projectTypes.title' | translate }}</span>
+                    <br>
+                    <select id="project-type" 
+                    name="project-type" 
+                    formControlName='projectInquiryType'>
+                        <option value="" 
+                        selected
+                        >{{ 'shared.select' | translate}}</option>
+                        <option *ngFor="let type of projectTypesEN"
+                        [value]="type"
+                        placeholder="--Select--"
+                        >{{type}}</option>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <span>{{ 'contact.userEmail.title' | translate }}</span>
+                    <br>
+                    <input type="email" 
+                    name="_replyto" 
+                    formControlName="userEmail">
+                </div>
+                <br>
+                <div>
+                    <span>{{ 'contact.emailSubject.title' | translate }}</span>
+                    <br>
+                    <input type="text" 
+                    name="_subject" 
+                    formControlName="mailSubject">
+                </div>
+                <br>
+                <div>
+                    <span>{{ 'contact.emailContent.title' | translate }}</span>
+                    <br>
+                    <textarea type="text"
+                    name="message" 
+                    formControlName="mailContent" 
+                    class="content"
+                    >Enter</textarea>
+                </div>
+                <br>
+                <input type="hidden" 
+                name="_honeypot" 
+                value=""> <!-- Spam Detection -->
+
+                <button type="submit" 
+                (click)="submitForm()"
+                [disabled]="isAlphaRelease"
+                >Submit</button>
+                <br>
+            </div>
+        </form>
+    </div>
+</div>
