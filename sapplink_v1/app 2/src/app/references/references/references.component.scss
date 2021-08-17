@@ -1,0 +1,80 @@
+.col-md-12 {
+    .title-container {
+        margin: auto;
+        text-align: center;
+        .title {
+            font-family: Merriweather;
+            font-weight: 300;
+            font-size: 30pt;
+            margin-top: 100px !important;
+            text-rendering: optimizeLegibility;
+            -webkit-font-smoothing: antialiased;
+            animation-name: titleSmoothIn;
+            animation-duration: 0.35s;
+            animation-timing-function: ease-in;
+            opacity: 0;
+            animation-delay: 0.5s;
+            animation-fill-mode: forwards;
+        }
+    }
+    
+    .reference1 {
+        margin-left: 10%;
+        width: 60%;
+        margin-top: 130px;
+        animation: easeInAppear;
+        animation-duration: 0.5s;
+        animation-delay: 0.7s;
+        opacity: 0;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in;
+
+        .ref {
+            font-family: Rosarivo;
+            font-style: italic;
+            text-align: center;
+            font-size: 21pt;
+            text-rendering: optimizeLegibility;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .refBy {
+            font-family: Merriweather;
+            font-size: 13pt;
+            float: right;
+            margin-left: 30px !important;
+            text-rendering: optimizeLegibility;
+            -webkit-font-smoothing: antialiased;
+        }
+    }
+    .reference2 {
+        margin-left: 30%;
+        width: 60%;
+        margin-top: 130px;
+        margin-bottom: 130px;
+        animation: easeInAppear;
+        animation-duration: 0.5s;
+        animation-delay: 0.7s;
+        opacity: 0;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in;
+
+        .ref {
+            font-family: Rosarivo;
+            font-style: italic;
+            text-align: center;
+            font-size: 21pt;
+            text-rendering: optimizeLegibility;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .refBy {
+            font-family: Merriweather;
+            font-size: 13pt;
+            // float: right;
+            margin-left: 130px !important;
+            text-rendering: optimizeLegibility;
+            -webkit-font-smoothing: antialiased;
+        }
+    }
+}

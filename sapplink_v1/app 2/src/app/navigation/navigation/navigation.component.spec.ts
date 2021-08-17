@@ -1,0 +1,31 @@
+import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+
+import { NavigationComponent } from './navigation.component';
+
+describe('NavigationComponent', () => {
+  let component: NavigationComponent;
+  let fixture: ComponentFixture<NavigationComponent>;
+
+  beforeEach(async(() => {
+    TestBed.configureTestingModule({
+      declarations: [ NavigationComponent ]
+    })
+    .compileComponents();
+  }));
+
+  beforeEach(() => {
+    fixture = TestBed.createComponent(NavigationComponent);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
+
+  it('should create', () => {
+    expect(component).toBeTruthy();
+  });
+
+  it('should disable navigation menu', () => {
+    expect(component.navigationDisabled).toBe(false);
+    component.toggleNavigationBar();
+    expect(component.navigationDisabled).toBe(true);
+  });
+});

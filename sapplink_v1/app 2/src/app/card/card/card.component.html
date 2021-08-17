@@ -1,0 +1,24 @@
+<div class="card-container">
+    <div class="col-md-12 header-img">
+        <div *ngIf="imageURL">
+            <img [src]="imageURL" class="img">
+        </div>
+    </div>
+    <div class="col-md-12 card-title">
+        <a (click)="openCardInfo()">{{ cardTitle }}</a>
+    </div>
+    <div class="col-md-12 card-tags">
+        <span class="col-md-21 tags-title">Tags: </span>
+        <div class="col-md-12 tag-holder" *ngIf="shouldDisplayAllTags">
+            <div *ngFor="let tag of tags; index as i">
+                <span class="tag"> {{ tag }} </span>
+            </div>
+        </div>
+        <!-- <div class="tag-holder" *ngIf="!shouldDisplayAllTags">
+            <div *ngFor="let tag of tagsGreaterThanThree(); index as i">
+                <span class="tag"> {{ tag }} </span>
+            </div>
+            <span>...</span>
+        </div> -->
+    </div>
+</div>

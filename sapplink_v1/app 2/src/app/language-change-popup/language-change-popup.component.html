@@ -1,0 +1,15 @@
+<div class="col-md-12">
+    <div class="labels">
+        <span class="col-md-12 title">{{ 'changeLanguage.title' | translate }}</span>
+        <br>
+        <br>
+        <span class="col-md-12 are-you-sure">{{ 'changeLanguage.areYouSure' | translate }} {{ language }}</span>
+    
+    </div>
+    <br>
+    <div class="col-md-12 buttons">
+        <button (click)="toggleLanguage()">{{ 'shared.yes' | translate }}</button>
+        &nbsp;
+        <button (click)="cancelLanguageChange()">{{ 'shared.no' | translate }}</button>
+    </div>
+</div>

@@ -21,19 +21,20 @@ export class LandingPageComponent implements OnInit {
 
   openFounder(): void {
     this.variableService.disableNavigationMenu();
-    let dialogRef = this.dialog.open(AboutPageComponent, {
-      autoFocus: true,
-      height: '68vh',
-      width: '68vw',
-      disableClose: false,
-    });
-    const subscription = dialogRef.componentInstance.closeDialog.subscribe(() => {
-      dialogRef.close();
-    });
-    dialogRef.afterClosed().subscribe(() => {
-      subscription.unsubscribe();
-      this.variableService.enableNavigationMenu();
-    });
+    window.open('https://www.marcmerih.ca', "_blank");
+    // let dialogRef = this.dialog.open(AboutPageComponent, {
+    //   autoFocus: true,
+    //   height: '68vh',
+    //   width: '68vw',
+    //   disableClose: false,
+    // });
+    // const subscription = dialogRef.componentInstance.closeDialog.subscribe(() => {
+    //   dialogRef.close();
+    // });
+    // dialogRef.afterClosed().subscribe(() => {
+    //   subscription.unsubscribe();
+    //   this.variableService.enableNavigationMenu();
+    // });
   }
 
 

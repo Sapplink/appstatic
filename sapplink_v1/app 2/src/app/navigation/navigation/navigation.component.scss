@@ -1,0 +1,115 @@
+@import '../../../styles.scss';
+
+.row {
+    text-align: center;
+    font-family: Merriweather;
+    font-size: 11pt;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    background-color: $white;
+    animation: easeInAppear;
+    animation-duration: 0.4s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+    margin-left: -0.5%;
+    
+    img {
+        height: 2.5em;
+        display: inline-block;
+        padding: 0;
+        cursor: pointer;
+    }
+    
+    .language-bar-open {
+        height: 3em;
+        margin: auto;
+        background-color: $secondary-green;
+        transition: height 0.5s ease-in-out;
+
+        .nav-menu-items {
+            display: inline-flex;
+            font-style: none;
+            margin: auto;
+            padding: 2px;
+            margin-left: 2%;
+            list-style: none;
+            pointer-events: pointer;
+            height: 5%;
+
+            a {
+                color: black;
+                font-family: Playfair Display;
+            }
+
+            li {
+                margin: 15px;
+                margin-top: 10px !important;
+                pointer-events: pointer;
+                text-decoration: none;
+            }
+        }
+    }
+
+    .language-bar-closed {
+        height: 0.2em;
+        margin: auto;
+        background-color: $secondary-green;
+        transition: height 0.5s ease-in-out;
+
+        ul {
+            display: none;
+        }
+    }
+    .language-bar-open-disabled {
+        height: 4em;
+        margin: auto;
+        background-color: $secondary-green;
+        transition: height 0.5s ease-in-out;
+        pointer-events: none;
+    }
+    .language-bar-closed-disabled {
+        height: 0.2em;
+        margin: auto;
+        background-color: $secondary-green;
+        transition: height 0.5s ease-in-out;
+        pointer-events: none;
+    }
+    .thin-nav {
+        height: auto;
+        margin: auto;
+        background-color: $black;
+        margin-left: -0.2%;
+
+        .flag-turkey, .flag-england {
+            height: 20px;
+            float: right;
+            margin-top: 7px;
+            padding: 4px;
+        }
+
+        .logo {
+            margin-left: 3%;
+        }
+        
+        i {
+            color: white;
+            float: left;
+            margin-top: 5px;
+            margin-left: 10px;
+            font-size: 21pt;
+            cursor: pointer;
+            transition: 0.5s ease-in-out;
+        }
+
+        .language {
+            color: white;
+            font-size: 9pt;
+            float: right;
+            font-family: Merriweather;
+            text-decoration: underline;
+            margin-top: 8px;
+        }
+    }
+}
